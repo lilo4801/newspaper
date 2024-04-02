@@ -103,7 +103,7 @@
 		</div>
 	</nav>
 
-	<div id="colorlib-page">
+	<div id="colorlib-page" style="background: #fff2cd">
 		<header>
 			<div class="container">
 				<div class="row">
@@ -134,7 +134,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-md-5 col-md-push-1 animate-box">
+					<div class="col-md-5 animate-box">
 						<div class="about-desc">
 							<div class="owl-carousel3">
 								<div class="item">
@@ -208,7 +208,7 @@
 			<div class="row">
 				<div class="col-md-12">
 					<div class="work-entry animate-box">
-						<a class="work-img" onclick="$('#anhbac1').click()"
+						<a class="work-img" style="cursor:pointer" onclick="$('#anhbac1').click()"
 							style="background-image: url(images/anh\ bac\ 1.jpg);background-size: contain;">
 							<div class="display-t">
 
@@ -227,7 +227,7 @@
 				</div>
 				<div class="col-md-12">
 					<div class="work-entry animate-box">
-						<a class="work-img" onclick="$('#anhbac2').click()"
+						<a class="work-img" style="cursor:pointer" onclick="$('#anhbac2').click()"
 							style="background-image: url(images/anh\ bac\ 2.jpg);background-size: contain;">
 							<div class="display-t">
 
@@ -257,7 +257,7 @@
 			<div class="row">
 				<div class="col-md-12">
 					<div class="services-flex">
-						<div class="one-third">
+						<div class="one-forth">
 							<div class="row">
 								<div class="col-md-12 col-md-offset-0 animate-box intro-heading">
 									<span>Báo Hà Giang</span>
@@ -298,7 +298,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="one-forth services-img">
+						<div class="one-third services-img">
 							<div id="myCarousel12" class="carousel slide" data-ride="carousel">
 								<!-- Indicators -->
 								<ol class="carousel-indicators" style="opacity: 0;">
@@ -1313,7 +1313,7 @@
 			<div class="row">
 				<div class="col-md-12">
 					<div class="services-flex">
-						<div class="one-third">
+						<div class="one-forth">
 							<div class="row">
 								<div class="col-md-12 col-md-offset-0 animate-box intro-heading">
 									<span>Báo Hà Giang</span>
@@ -1362,7 +1362,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="one-forth">
+						<div class="one-third">
 							<div id="myCarousel" class="carousel slide" data-ride="carousel">
 								<!-- Indicators -->
 								<ol class="carousel-indicators" style="opacity: 0;">
@@ -2770,6 +2770,11 @@
 	</div>
 
 
+	<button id="scrollToTopBtn">
+		<i class="icon-arrow-up-circle"></i>
+	</button>
+
+
 
 	</div>
 
@@ -2791,6 +2796,30 @@
 	<script src="js/main.js"></script>
 
 	<style>
+		#scrollToTopBtn {
+			display: none;
+			position: fixed;
+			bottom: 30px;
+			right: 50px;
+			width: 50px;
+			height: 50px;
+			border-radius: 50%;
+			z-index: 99;
+			cursor: pointer;
+			border: none;
+			border-radius: 5px;
+			padding: 10px 20px;
+			transition: opacity 0.3s, visibility 0.3s;
+			background-color: transparent;
+
+		}
+
+		#scrollToTopBtn i {
+			font-size: 50px;
+		}
+
+
+
 		.showImage,
 		.showImage1,
 		.showImage2,
@@ -2932,10 +2961,9 @@
 		.modal-content {
 			margin: auto;
 			display: block;
-			width: 60%;
+			width: 70%;
 			height: 70%;
 			object-fit: contain;
-			max-width: 700px;
 		}
 
 		/* Caption of Modal Image */
@@ -3011,6 +3039,10 @@
 		.desc p {
 			font-size: 20px;
 			font-family: Arial, Helvetica, sans-serif;
+		}
+
+		#myModal4 .modal-content {
+			object-fit: cover;
 		}
 	</style>
 	<script>
@@ -3128,9 +3160,21 @@
 		showModalCus("myModal6", "showImage6")
 
 
+		window.onscroll = function () { scrollFunction() };
 
+		function scrollFunction() {
+			var scrollToTopBtn = document.getElementById("scrollToTopBtn");
+			if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+				scrollToTopBtn.style.display = "block";
+			} else {
+				scrollToTopBtn.style.display = "none";
+			}
+		}
 
-
+		// When the user clicks on the button, scroll to the top of the document
+		document.getElementById("scrollToTopBtn").addEventListener("click", function () {
+			window.scrollTo({ top: 0, behavior: 'smooth' });
+		});
 
 
 
