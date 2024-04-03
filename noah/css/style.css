@@ -194,25 +194,25 @@ h6 {
   margin-left: 5px;
 }
 
-#myCarousel .article img {
+.myCarousel .article img {
   height: 600px;
   object-fit: contain;
 }
 
-#myCarousel .item {
+.myCarousel .item {
   /* display: flex; justify-content: center; */
 }
 
-#myCarousel .article {
+.myCarousel .article {
   margin-bottom: 0;
-}
+} q
 
-#myCarousel .article a {
+/* .myCarousel .article a {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-}
+} */
 
 #myCarousel12 .article img {
   height: 600px;
@@ -272,7 +272,7 @@ h6 {
   /* Stay in place */
   z-index: 1;
   /* Sit on top */
-  padding-top: 100px;
+  padding-top: 40px;
   /* Location of the box */
   left: 0;
   top: 0;
@@ -329,7 +329,7 @@ h6 {
 }
 
 /* The Close Button */
-.close {
+.closeModal {
   position: absolute;
   top: 15px;
   right: 35px;
@@ -337,10 +337,11 @@ h6 {
   font-size: 40px;
   font-weight: bold;
   transition: 0.3s;
+  z-index: 1000;
 }
 
-.close:hover,
-.close:focus {
+.closeModal:hover,
+.closeModal:focus {
   color: #bbb;
   text-decoration: none;
   cursor: pointer;
@@ -1175,8 +1176,8 @@ header .colorlib-navbar-brand .colorlib-logo:focus {
     object-fit: contain;
   }
 
-  #myCarousel .article img {
-    height: 430px;
+  .myCarousel .article img {
+    height: 360px;
     object-fit: contain;
   }
 
@@ -1367,7 +1368,7 @@ header .colorlib-navbar-brand .colorlib-logo:focus {
 }
 
 .article .blog-img {
-  margin-bottom: 50px;
+  margin-bottom: 20px;
   display: block;
   position: relative;
   overflow: hidden;
@@ -2056,4 +2057,101 @@ input[type="text"] {
 
 .js .animate-box {
   opacity: 0;
+}
+
+
+.owl-theme .owl-controls .owl-nav [class*=owl-] {
+  color: #000;
+}
+
+.modal .owl-theme .owl-controls .owl-nav .owl-prev,
+.modal .owl-theme .owl-controls .owl-nav .owl-next {
+  position: absolute;
+  top: 45%;
+  transform: translateY(-50%);
+  color: #000; /* Button text color */
+  border: none;
+  padding: 10px;
+  font-size: 20px;
+  z-index: 1000; /* Ensure buttons appear above the carousel */
+  background: transparent;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border: none; /* Ensure buttons appear above the carousel */
+}
+
+.modal .owl-theme .owl-controls .owl-nav .owl-prev {
+  left: 15%; /* Adjust the distance from the left */
+}
+
+.modal .owl-theme .owl-controls .owl-nav .owl-next {
+  right: 15%; /* Adjust the distance from the right */
+}
+
+.modal h2 a{
+  color: #fff !important;
+}
+
+.myCarousel .desc {
+  width: 60%;
+  margin: auto;
+}
+.myCarousel h3{
+  color: #fff !important;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .owl-theme .owl-controls .owl-nav [class*=owl-] {
+    color: #000;
+  }
+  .modal .owl-theme .owl-controls .owl-nav .owl-prev,
+  .modal .owl-theme .owl-controls .owl-nav .owl-next {
+    position: absolute;
+    top: 110%;
+    transform: translateY(-50%);
+    color: #000; /* Button text color */
+    border: none;
+    padding: 10px;
+    font-size: 20px;
+    z-index: 1000; /* Ensure buttons appear above the carousel */
+    background: transparent;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border: none;
+  }
+  
+  .modal .owl-theme .owl-controls .owl-nav .owl-prev {
+    left: 36%; /* Adjust the distance from the left */
+  }
+  
+  .modal .owl-theme .owl-controls .owl-nav .owl-next {
+    right: 36%; /* Adjust the distance from the right */
+  }
+ 
+  .modal h2 a{
+    font-size: 18px;
+  }
+  
+  .myCarousel .desc {
+    width: 70%;
+    margin: auto;
+    height: 100px;
+  }
+  .myCarousel h3{
+   font-size: 18px;
+  }
+  .myCarousel .article a {
+    margin-bottom: 40px;
+  }
+
+  .closeModal {
+    top: -16px;
+    right: 18px;
+  }
+}
+  
+
+.modal .desc p {
+  text-align: center;
 }
