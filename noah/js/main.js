@@ -178,7 +178,7 @@
 		<div class="box-img myCarousel">
 			<div class="item">
 				<div class="article">
-					<a class="blog-img"> <img class="img-responsive showImage hoatdongImg" data-src="images/21a.png"
+					<a class="blog-img"> <img class="img-responsive showImage" src="images/21a.png"
 							style="object-fit: contain;" alt="Tổng Biên tập Báo Hà Giang Lê Trọng Lập và các đồng chí Phó Tổng Biên với
 							lãnh đạo, cán bộ, phóng viên, biên tập viên Báo Hà Giang năm 2014"> </img></a>
 					<div class="desc">
@@ -584,8 +584,8 @@
 
 			<div class="item">
 				<div class="article">
-					<a class="blog-img"> <img class="img-responsive showImage hoatdongImg"
-							data-src="images/2 T59.png" style="object-fit: contain;" alt="Báo Hà Giang vận động, kết nối các nhà hảo
+					<a class="blog-img"> <img class="img-responsive showImage"
+							src="images/2 T59.png" style="object-fit: contain;" alt="Báo Hà Giang vận động, kết nối các nhà hảo
 							tâm tặng quà cho Điểm Trường Mầm non và
 							Tiểu học Tả Lủng (Mèo Vạc)."> </img></a>
 					<div class="desc">
@@ -614,7 +614,7 @@
         $("#customModal6 .myCarousel").owlCarousel({
           animateOut: "fadeOut",
           animateIn: "fadeIn",
-          autoplay: true,
+        //   autoplay: true,
           loop: true,
           margin: 0,
           nav: true,
@@ -651,8 +651,8 @@
 			  <!-- 0 -->
 			  <div class="item active">
 				  <div class="article">
-					  <a class="blog-img"> <img class="img-responsive showImage2 soluocImg"
-							  data-src="images/t8 sua.png" alt="THỜI KỲ 1964 - 1976"> </img></a>
+					  <a class="blog-img"> <img class="img-responsive showImage2"
+							  src="images/t8 sua.png" alt="THỜI KỲ 1964 - 1976"> </img></a>
 					  <div class="desc" style="text-align: center;">
 						  <!-- <span class="meta">15, Feb 2018</span> -->
 						  <h2><a>THỜI KỲ 1964 - 1976</a></h2>
@@ -802,8 +802,8 @@
 			  </div>
 			  <div class="item">
 				  <div class="article">
-					  <a class="blog-img"> <img class="img-responsive showImage2 soluocImg"
-							  data-src="images/9 Giao dien bao Ha Giang dien tu.png"
+					  <a class="blog-img"> <img class="img-responsive showImage2"
+							  src="images/9 Giao dien bao Ha Giang dien tu.png"
 							  alt="ẤN PHẨM BÁO HÀ GIANG QUA CÁC THỜI KỲ"> </img></a>
 					  <div class="desc" style="text-align: center;">
 						  <!-- <span class="meta">15, Feb 2018</span> -->
@@ -828,7 +828,7 @@
         $("#customModal1 .myCarousel").owlCarousel({
           animateOut: "fadeOut",
           animateIn: "fadeIn",
-          autoplay: true,
+        //   autoplay: true,
           loop: true,
           margin: 0,
           nav: true,
@@ -865,8 +865,8 @@
 			<div class="item">
 
 				<div class="article">
-					<a class="blog-img"> <img class="img-responsive showImage1 lanhdaotrunguongImg"
-							data-src="images/1a.png" style="object-fit: contain;"
+					<a class="blog-img"> <img class="img-responsive showImage1"
+							src="images/1a.png" style="object-fit: contain;"
 							alt="Tổng Bí thư Nguyễn Văn Linh với các nhà báo.">
 						</img></a>
 					<div class="desc">
@@ -1077,8 +1077,8 @@
 			</div>
 			<div class="item">
 				<div class="article">
-					<a class="blog-img"> <img class="img-responsive showImage1 lanhdaotrunguongImg"
-							data-src="images/PHO CHU NHIEM UBTC2.png" style="object-fit: contain;" alt="Phó Chủ nhiệm Ủy ban Tài chính, Ngân sách của Quốc hội (khóa XV) Phạm Thúy Chinh
+					<a class="blog-img"> <img class="img-responsive showImage1"
+							src="images/PHO CHU NHIEM UBTC2.png" style="object-fit: contain;" alt="Phó Chủ nhiệm Ủy ban Tài chính, Ngân sách của Quốc hội (khóa XV) Phạm Thúy Chinh
 									tặng quà, chúc Tết tập thể lãnh đạo, cán bộ, phóng viên, biên tập viên Báo Hà
 									Giang."> </img></a>
 					<div class="desc">
@@ -1108,7 +1108,7 @@
         $("#customModal2 .myCarousel").owlCarousel({
           animateOut: "fadeOut",
           animateIn: "fadeIn",
-          autoplay: true,
+        //   autoplay: true,
           loop: true,
           margin: 0,
           nav: true,
@@ -1144,8 +1144,8 @@
 		<div class="box-img myCarousel">
 			<div class="item active">
 				<div class="article">
-					<a class="blog-img"> <img class="img-responsive showImage3 lanhdaotinhImg"
-							data-src="images/0b1d951d2b8087dede91.png" alt="TỔNG BIÊN TẬP">
+					<a class="blog-img"> <img class="img-responsive showImage3"
+							src="images/0b1d951d2b8087dede91.png" alt="TỔNG BIÊN TẬP">
 						</img></a>
 					<div class="desc" style="text-align: center;">
 						<!-- <span class="meta">15, Feb 2018</span> -->
@@ -1355,8 +1355,8 @@
 			</div>
 			<div class="item">
 				<div class="article">
-					<a class="blog-img"> <img class="img-responsive showImage3 lanhdaotinhImg"
-							data-src="images/BD 3.png" alt="PHÒNG BẠN ĐỌC - THƯ VIỆN - TƯ LIỆU">
+					<a class="blog-img"> <img class="img-responsive showImage3"
+							src="images/BD 3.png" alt="PHÒNG BẠN ĐỌC - THƯ VIỆN - TƯ LIỆU">
 						</img></a>
 					<div class="desc" style="text-align: center;">
 						<h2><a>PHÒNG BẠN ĐỌC - THƯ VIỆN - TƯ LIỆU</a></h2>
@@ -1380,7 +1380,7 @@
         $("#customModal3 .myCarousel").owlCarousel({
           animateOut: "fadeOut",
           animateIn: "fadeIn",
-          autoplay: true,
+        //   autoplay: true,
           loop: true,
           margin: 0,
           nav: true,
@@ -1416,7 +1416,7 @@
 		<div class="box-img myCarousel">
 			<div class="item">
 				<div class="article">
-					<a class="blog-img"> <img class="img-responsive showImage bientapImg" data-src="images/1.png"
+					<a class="blog-img"> <img class="img-responsive showImage " src="images/1.png"
 							style="object-fit: contain;" alt="Bí thư Tỉnh ủy Hoàng Thừa
 									ký duyệt Măng - sét Báo Hà Giang
 									số đầu tiênsau tái lập tỉnh."> </img></a>
@@ -1681,8 +1681,8 @@
 			</div>
 			<div class="item">
 				<div class="article">
-					<a class="blog-img"> <img class="img-responsive showImage bientapIm"
-							data-src="images/VUONG NGOC HA.png" style="object-fit: contain;" alt="Đồng chí Vương Ngọc Hà, Trưởng Ban Tuyên
+					<a class="blog-img"> <img class="img-responsive showImage"
+							src="images/VUONG NGOC HA.png" style="object-fit: contain;" alt="Đồng chí Vương Ngọc Hà, Trưởng Ban Tuyên
 									giáo Tỉnh ủy thăm, làm việc tại Báo Hà Giang."> </img></a>
 					<div class="desc">
 						<!-- <span class="meta">Tháng 2.2024</span> -->
@@ -1708,7 +1708,7 @@
         $("#customModal4 .myCarousel").owlCarousel({
           animateOut: "fadeOut",
           animateIn: "fadeIn",
-          autoplay: true,
+        //   autoplay: true,
           loop: true,
           margin: 0,
           nav: true,
@@ -1738,13 +1738,50 @@
       });
     });
 
+    let cungbacContent = `<div id="customModal5" class="modal">
+	<span class="closeModal">×</span>
+	<div class="body">
+		<div class="box-img myCarousel">
+			<div class="item">
+				<div class="article">
+					<a class="blog-img"> <img class="img-responsive showImage cungbacImg"
+							src="images/anh bac 1.jpg" style="object-fit: contain;" alt="Cán bộ báo chí cũng là chiến sỹ cách mạng.
+							Cây bút, trang giấy là vũ khí sắc bén của họ"> </img></a>
+					<div class="desc">
+						<h3>“Cán bộ báo chí cũng là chiến sỹ cách mạng. Cây bút, trang giấy là vũ khí sắc bén của
+							họ”</h3>
+						<p></p>
+					</div>
+				</div>
+			</div>
+			<div class="item">
+				<div class="article">
+					<a class="blog-img"> <img class="img-responsive showImage cungbacImg"
+							src="images/anh bac 2.jpg" style="object-fit: contain;"
+							alt="Bài viết đăng trên báo Hà Giang số ra ngày 20.6.1995."> </img></a>
+					<div class="desc">
+						<h3>Bài viết đăng trên báo Hà Giang số ra ngày 20.6.1995.</h3>
+						<p></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>`;
     $(".cungbac .ok").on("click", () => {
+      if ($("#customModal5").length <= 0) {
+        const modalContainer = document.createElement("div");
+        modalContainer.id = "cungbac";
+        modalContainer.innerHTML = cungbacContent;
+        document.body.appendChild(modalContainer);
+        $(".cungbacImg").lazy();
+      }
       $("#customModal5").show();
       if ($("#customModal5 .owl-carousel").length <= 0) {
         $("#customModal5 .myCarousel").owlCarousel({
           animateOut: "fadeOut",
           animateIn: "fadeIn",
-          autoplay: true,
+        //   autoplay: true,
           loop: true,
           margin: 0,
           nav: true,
@@ -1771,6 +1808,7 @@
 
       $("#customModal5 .closeModal").on("click", () => {
         $("#customModal5").hide();
+        document.getElementById("cungbac").remove();
       });
     });
 
@@ -1780,7 +1818,7 @@
         $("#customModal7 .myCarousel").owlCarousel({
           animateOut: "fadeOut",
           animateIn: "fadeIn",
-          autoplay: true,
+        //   autoplay: true,
           loop: true,
           margin: 0,
           nav: true,
