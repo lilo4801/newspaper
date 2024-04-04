@@ -1,319 +1,313 @@
 (function () {
-	"use strict";
+  "use strict";
 
-	// iPad and iPod detection
-	var isiPad = function () {
-		return navigator.platform.indexOf("iPad") != -1;
-	};
+  // iPad and iPod detection
+  var isiPad = function () {
+    return navigator.platform.indexOf("iPad") != -1;
+  };
 
-	var isiPhone = function () {
-		return (
-			navigator.platform.indexOf("iPhone") != -1 ||
-			navigator.platform.indexOf("iPod") != -1
-		);
-	};
+  var isiPhone = function () {
+    return (
+      navigator.platform.indexOf("iPhone") != -1 ||
+      navigator.platform.indexOf("iPod") != -1
+    );
+  };
 
-	var fullHeight = function () {
-		$(".js-fullheight").css("height", $(window).height());
-		$(window).resize(function () {
-			$(".js-fullheight").css("height", $(window).height());
-		});
-	};
+  var fullHeight = function () {
+    $(".js-fullheight").css("height", $(window).height());
+    $(window).resize(function () {
+      $(".js-fullheight").css("height", $(window).height());
+    });
+  };
 
-	var burgerMenu = function () {
-		$(".js-colorlib-nav-toggle").on("click", function (event) {
-			event.preventDefault();
-			var $this = $(this);
-			if ($("body").hasClass("menu-show")) {
-				$("body").removeClass("menu-show");
-				$("#colorlib-main-nav > .js-colorlib-nav-toggle").removeClass("show");
-			} else {
-				$("body").addClass("menu-show");
-				setTimeout(function () {
-					$("#colorlib-main-nav > .js-colorlib-nav-toggle").addClass("show");
-				}, 900);
-			}
-		});
-	};
+  var burgerMenu = function () {
+    $(".js-colorlib-nav-toggle").on("click", function (event) {
+      event.preventDefault();
+      var $this = $(this);
+      if ($("body").hasClass("menu-show")) {
+        $("body").removeClass("menu-show");
+        $("#colorlib-main-nav > .js-colorlib-nav-toggle").removeClass("show");
+      } else {
+        $("body").addClass("menu-show");
+        setTimeout(function () {
+          $("#colorlib-main-nav > .js-colorlib-nav-toggle").addClass("show");
+        }, 900);
+      }
+    });
+  };
 
-	// Animations
+  // Animations
 
-	var contentWayPoint = function () {
-		var i = 0;
-		$(".animate-box").waypoint(
-			function (direction) {
-				if (direction === "down" && !$(this.element).hasClass("animated")) {
-					i++;
+  var contentWayPoint = function () {
+    var i = 0;
+    $(".animate-box").waypoint(
+      function (direction) {
+        if (direction === "down" && !$(this.element).hasClass("animated")) {
+          i++;
 
-					$(this.element).addClass("item-animate");
-					setTimeout(function () {
-						$("body .animate-box.item-animate").each(function (k) {
-							var el = $(this);
-							setTimeout(
-								function () {
-									var effect = el.data("animate-effect");
-									if (effect === "fadeIn") {
-										el.addClass("fadeIn animated");
-									} else {
-										el.addClass("fadeInUp animated");
-									}
+          $(this.element).addClass("item-animate");
+          setTimeout(function () {
+            $("body .animate-box.item-animate").each(function (k) {
+              var el = $(this);
+              setTimeout(
+                function () {
+                  var effect = el.data("animate-effect");
+                  if (effect === "fadeIn") {
+                    el.addClass("fadeIn animated");
+                  } else {
+                    el.addClass("fadeInUp animated");
+                  }
 
-									el.removeClass("item-animate");
-								},
-								k * 200,
-								"easeInOutExpo"
-							);
-						});
-					}, 100);
-				}
-			},
-			{ offset: "85%" }
-		);
-	};
+                  el.removeClass("item-animate");
+                },
+                k * 200,
+                "easeInOutExpo"
+              );
+            });
+          }, 100);
+        }
+      },
+      { offset: "85%" }
+    );
+  };
 
-	var counter = function () {
-		$(".js-counter").countTo({
-			formatter: function (value, options) {
-				return value.toFixed(options.decimals);
-			},
-		});
-	};
+  var counter = function () {
+    $(".js-counter").countTo({
+      formatter: function (value, options) {
+        return value.toFixed(options.decimals);
+      },
+    });
+  };
 
-	var counterWayPoint = function () {
-		if ($("#colorlib-counter").length > 0) {
-			$("#colorlib-counter").waypoint(
-				function (direction) {
-					if (direction === "down" && !$(this.element).hasClass("animated")) {
-						setTimeout(counter, 400);
-						$(this.element).addClass("animated");
-					}
-				},
-				{ offset: "90%" }
-			);
-		}
-	};
-	let owl;
-	let owl2;
-	let owl3;
-	// Owl Carousel
-	var owlCarouselFeatureSlide = function () {
+  var counterWayPoint = function () {
+    if ($("#colorlib-counter").length > 0) {
+      $("#colorlib-counter").waypoint(
+        function (direction) {
+          if (direction === "down" && !$(this.element).hasClass("animated")) {
+            setTimeout(counter, 400);
+            $(this.element).addClass("animated");
+          }
+        },
+        { offset: "90%" }
+      );
+    }
+  };
+  let owl;
+  let owl2;
+  let owl3;
+  // Owl Carousel
+  var owlCarouselFeatureSlide = function () {
+    var windowWidth = window.innerWidth;
 
-		var windowWidth = window.innerWidth;
+    if (windowWidth < 769) {
+      owl = $(".owl-carousel1");
+      owl.owlCarousel({
+        animateOut: "fadeOut",
+        animateIn: "fadeIn",
+        autoplay: false,
+        loop: true,
+        margin: 0,
+        nav: true,
+        dots: false,
+        autoHeight: true,
+        lazyLoad: true,
+        responsive: {
+          0: {
+            items: 1,
+          },
+          600: {
+            items: 2,
+          },
+          1000: {
+            items: 3,
+          },
+        },
+        navText: [
+          "<i class='icon-arrow-left3 owl-direction'></i>",
+          "<i class='icon-arrow-right3 owl-direction'></i>",
+        ],
+      });
+    } else {
+      owl = $(".owl-carousel1");
+      owl.owlCarousel({
+        animateOut: "fadeOut",
+        animateIn: "fadeIn",
+        autoplay: true,
+        loop: true,
+        margin: 0,
+        nav: true,
+        dots: false,
+        autoHeight: true,
+        lazyLoad: true,
+        responsive: {
+          0: {
+            items: 1,
+          },
+          600: {
+            items: 2,
+          },
+          1000: {
+            items: 3,
+          },
+        },
+        navText: [
+          "<i class='icon-arrow-left3 owl-direction'></i>",
+          "<i class='icon-arrow-right3 owl-direction'></i>",
+        ],
+      });
+    }
 
-		if (windowWidth < 769) {
-			owl = $(".owl-carousel1");
-			owl.owlCarousel({
-				animateOut: "fadeOut",
-				animateIn: "fadeIn",
-				autoplay: false,
-				loop: true,
-				margin: 0,
-				nav: true,
-				dots: false,
-				autoHeight: true,
-				lazyLoad: true,
-				responsive: {
-					0: {
-						items: 1,
-					},
-					600: {
-						items: 2,
-					},
-					1000: {
-						items: 3,
-					},
-				},
-				navText: [
-					"<i class='icon-arrow-left3 owl-direction'></i>",
-					"<i class='icon-arrow-right3 owl-direction'></i>",
-				],
-			});
-		} else {
-			owl = $(".owl-carousel1");
-			owl.owlCarousel({
-				animateOut: "fadeOut",
-				animateIn: "fadeIn",
-				autoplay: true,
-				loop: true,
-				margin: 0,
-				nav: true,
-				dots: false,
-				autoHeight: true,
-				lazyLoad: true,
-				responsive: {
-					0: {
-						items: 1,
-					},
-					600: {
-						items: 2,
-					},
-					1000: {
-						items: 3,
-					},
-				},
-				navText: [
-					"<i class='icon-arrow-left3 owl-direction'></i>",
-					"<i class='icon-arrow-right3 owl-direction'></i>",
-				],
-			});
-		}
+    owl3 = $(".owl-carousel3");
+    owl3.owlCarousel({
+      animateOut: "fadeOut",
+      animateIn: "fadeIn",
+      autoplay: true,
+      loop: true,
+      margin: 0,
+      nav: false,
+      dots: false,
+      autoHeight: true,
+      items: 1,
+	  lazyLoad: true,
+      navText: [
+        "<i class='icon-arrow-left3 owl-direction'></i>",
+        "<i class='icon-arrow-right3 owl-direction'></i>",
+      ],
+    });
 
+    if (windowWidth < 769) {
+      $(".owl-carousel4").owlCarousel({
+        animateOut: "fadeOut",
+        animateIn: "fadeIn",
+        autoplay: false,
+        loop: true,
+        margin: 0,
+        nav: true,
+        autoHeight: true,
+		lazyLoad: true,
+        responsive: {
+          0: {
+            items: 1,
+          },
+          600: {
+            items: 1,
+          },
+          1000: {
+            items: 1,
+          },
+        },
+        navText: [
+          "<i class='icon-arrow-left3 owl-direction'></i>",
+          "<i class='icon-arrow-right3 owl-direction'></i>",
+        ],
+      });
+    } else {
+      $(".owl-carousel4").owlCarousel({
+        animateOut: "fadeOut",
+        animateIn: "fadeIn",
+        autoplay: true,
+        loop: true,
+        margin: 0,
+        nav: true,
+        autoHeight: true,
+        lazyLoad: true,
+        responsive: {
+          0: {
+            items: 1,
+          },
+          600: {
+            items: 1,
+          },
+          1000: {
+            items: 1,
+          },
+        },
+        navText: [
+          "<i class='icon-arrow-left3 owl-direction'></i>",
+          "<i class='icon-arrow-right3 owl-direction'></i>",
+        ],
+      });
+    }
 
+    if (windowWidth < 769) {
+      $(".owl-carousel5").owlCarousel({
+        animateOut: "fadeOut",
+        animateIn: "fadeIn",
+        autoplay: false,
+        loop: true,
+        margin: 0,
+        nav: true,
+        autoHeight: true,
+		lazyLoad: true,
+        responsive: {
+          0: {
+            items: 1,
+          },
+          600: {
+            items: 1,
+          },
+          1000: {
+            items: 1,
+          },
+        },
+        navText: [
+          "<i class='icon-arrow-left3 owl-direction'></i>",
+          "<i class='icon-arrow-right3 owl-direction'></i>",
+        ],
+      });
+    } else {
+      $(".owl-carousel5").owlCarousel({
+        animateOut: "fadeOut",
+        animateIn: "fadeIn",
+        autoplay: true,
+        loop: true,
+        margin: 0,
+        nav: true,
+        autoHeight: true,
+        lazyLoad: true,
+        responsive: {
+          0: {
+            items: 1,
+          },
+          600: {
+            items: 1,
+          },
+          1000: {
+            items: 1,
+          },
+        },
+        navText: [
+          "<i class='icon-arrow-left3 owl-direction'></i>",
+          "<i class='icon-arrow-right3 owl-direction'></i>",
+        ],
+      });
+    }
+  };
 
+  // Document on load.
+  $(function () {
+    fullHeight();
+    burgerMenu();
+    counterWayPoint();
+    contentWayPoint();
+    owlCarouselFeatureSlide();
 
+    // $(".lazy").lazy();
+    $(".work-img").lazy();
 
-		owl3 = $(".owl-carousel3");
-		owl3.owlCarousel({
-			animateOut: "fadeOut",
-			animateIn: "fadeIn",
-			autoplay: true,
-			loop: true,
-			margin: 0,
-			nav: false,
-			dots: false,
-			autoHeight: true,
-			items: 1,
-			navText: [
-				"<i class='icon-arrow-left3 owl-direction'></i>",
-				"<i class='icon-arrow-right3 owl-direction'></i>",
-			],
-		});
+    $(".soluochandleclick").on("click", (event) => {
+      let attributeValue = $(event.target).attr("index");
+      let dot = $(".owl-carousel4 .owl-dot").eq(attributeValue);
+      dot.click();
+    });
 
+    $(".banbientaphandleclick").on("click", (event) => {
+      let attributeValue = $(event.target).attr("index");
+      let dot = $(".owl-carousel5 .owl-dot").eq(attributeValue);
+      dot.click();
+    });
 
-		if (windowWidth < 769) {
-			$(".owl-carousel4").owlCarousel({
-				animateOut: "fadeOut",
-				animateIn: "fadeIn",
-				autoplay: false,
-				loop: true,
-				margin: 0,
-				nav: true,
-				autoHeight: true,
-				responsive: {
-					0: {
-						items: 1,
-					},
-					600: {
-						items: 1,
-					},
-					1000: {
-						items: 1,
-					},
-				},
-				navText: [
-					"<i class='icon-arrow-left3 owl-direction'></i>",
-					"<i class='icon-arrow-right3 owl-direction'></i>",
-				],
-			});
-		} else {
-			$(".owl-carousel4").owlCarousel({
-				animateOut: "fadeOut",
-				animateIn: "fadeIn",
-				autoplay: true,
-				loop: true,
-				margin: 0,
-				nav: true,
-				autoHeight: true,
-				responsive: {
-					0: {
-						items: 1,
-					},
-					600: {
-						items: 1,
-					},
-					1000: {
-						items: 1,
-					},
-				},
-				navText: [
-					"<i class='icon-arrow-left3 owl-direction'></i>",
-					"<i class='icon-arrow-right3 owl-direction'></i>",
-				],
-			});
-		}
-
-		if (windowWidth < 769) {
-			$(".owl-carousel5").owlCarousel({
-				animateOut: "fadeOut",
-				animateIn: "fadeIn",
-				autoplay: false,
-				loop: true,
-				margin: 0,
-				nav: true,
-				autoHeight: true,
-				responsive: {
-					0: {
-						items: 1,
-					},
-					600: {
-						items: 1,
-					},
-					1000: {
-						items: 1,
-					},
-				},
-				navText: [
-					"<i class='icon-arrow-left3 owl-direction'></i>",
-					"<i class='icon-arrow-right3 owl-direction'></i>",
-				],
-			});
-		} else {
-			$(".owl-carousel5").owlCarousel({
-				animateOut: "fadeOut",
-				animateIn: "fadeIn",
-				autoplay: true,
-				loop: true,
-				margin: 0,
-				nav: true,
-				autoHeight: true,
-				responsive: {
-					0: {
-						items: 1,
-					},
-					600: {
-						items: 1,
-					},
-					1000: {
-						items: 1,
-					},
-				},
-				navText: [
-					"<i class='icon-arrow-left3 owl-direction'></i>",
-					"<i class='icon-arrow-right3 owl-direction'></i>",
-				],
-			});
-		}
-
-
-	};
-
-	// Document on load.
-	$(function () {
-		fullHeight();
-		burgerMenu();
-		counterWayPoint();
-		contentWayPoint();
-		owlCarouselFeatureSlide();
-
-
-		$(".lazy").lazy();
-		$(".work-img").lazy();
-
-
-		$(".soluochandleclick").on("click", (event) => {
-			let attributeValue = $(event.target).attr("index");
-			let dot = $(".owl-carousel4 .owl-dot").eq(attributeValue)
-			dot.click();
-		})
-
-
-		$(".banbientaphandleclick").on("click", (event) => {
-			let attributeValue = $(event.target).attr("index");
-			let dot = $(".owl-carousel5 .owl-dot").eq(attributeValue)
-			dot.click();
-		})
-
-		let motsohoatdongContent = `<div id="customModal6" class="modal">
+    let motsohoatdongContent = `<div id="customModal6" class="modal">
 	<span class="closeModal">×</span>
 	<div class="body">
 		<div class="box-img myCarousel">
@@ -738,50 +732,50 @@
 	</div>
 </div>
 `;
-		$(".motsohoatdong .showImage6").on("click", () => {
-			if ($("#customModal6").length <= 0) {
-				const modalContainer = document.createElement("div");
-				modalContainer.innerHTML = motsohoatdongContent;
-				document.body.appendChild(modalContainer);
-				$(".hoatdongImg").lazy();
-			}
+    $(".motsohoatdong .showImage6").on("click", () => {
+      if ($("#customModal6").length <= 0) {
+        const modalContainer = document.createElement("div");
+        modalContainer.innerHTML = motsohoatdongContent;
+        document.body.appendChild(modalContainer);
+        $(".hoatdongImg").lazy();
+      }
 
-			$("#customModal6").show();
-			if ($("#customModal6 .owl-carousel").length <= 0) {
-				$("#customModal6 .myCarousel").owlCarousel({
-					animateOut: "fadeOut",
-					animateIn: "fadeIn",
-					//   autoplay: true,
-					loop: true,
-					margin: 0,
-					nav: true,
-					dots: false,
-					autoHeight: true,
-					lazyLoad: true,
-					responsive: {
-						0: {
-							items: 1,
-						},
-						600: {
-							items: 1,
-						},
-						1000: {
-							items: 1,
-						},
-					},
-					navText: [
-						"<i class='icon-arrow-left3 owl-direction'></i>",
-						"<i class='icon-arrow-right3 owl-direction'></i>",
-					],
-				});
-			}
+      $("#customModal6").show();
+      if ($("#customModal6 .owl-carousel").length <= 0) {
+        $("#customModal6 .myCarousel").owlCarousel({
+          animateOut: "fadeOut",
+          animateIn: "fadeIn",
+          //   autoplay: true,
+          loop: true,
+          margin: 0,
+          nav: true,
+          dots: false,
+          autoHeight: true,
+          lazyLoad: true,
+          responsive: {
+            0: {
+              items: 1,
+            },
+            600: {
+              items: 1,
+            },
+            1000: {
+              items: 1,
+            },
+          },
+          navText: [
+            "<i class='icon-arrow-left3 owl-direction'></i>",
+            "<i class='icon-arrow-right3 owl-direction'></i>",
+          ],
+        });
+      }
 
-			$("#customModal6 .closeModal").on("click", () => {
-				$("#customModal6").hide();
-			});
-		});
+      $("#customModal6 .closeModal").on("click", () => {
+        $("#customModal6").hide();
+      });
+    });
 
-		let soluocContent = `<div id="customModal1" class="modal">
+    let soluocContent = `<div id="customModal1" class="modal">
 		<span class="closeModal">×</span>
 		<div class="body">
 			<div class="box-img myCarousel">
@@ -951,51 +945,51 @@
 			</div>
 		</div>
 	</div>`;
-		$(".soluocthoiki .article").on("click", () => {
-			if ($("#customModal1").length <= 0) {
-				const modalContainer = document.createElement("div");
-				modalContainer.innerHTML = soluocContent;
-				document.body.appendChild(modalContainer);
-				$(".soluocImg").lazy();
-			}
+    $(".soluocthoiki .article").on("click", () => {
+      if ($("#customModal1").length <= 0) {
+        const modalContainer = document.createElement("div");
+        modalContainer.innerHTML = soluocContent;
+        document.body.appendChild(modalContainer);
+        $(".soluocImg").lazy();
+      }
 
-			$("#customModal1").show();
+      $("#customModal1").show();
 
-			if ($("#customModal1 .owl-carousel").length <= 0) {
-				$("#customModal1 .myCarousel").owlCarousel({
-					animateOut: "fadeOut",
-					animateIn: "fadeIn",
-					//   autoplay: true,
-					loop: true,
-					margin: 0,
-					nav: true,
-					dots: false,
-					autoHeight: true,
-					lazyLoad: true,
-					responsive: {
-						0: {
-							items: 1,
-						},
-						600: {
-							items: 1,
-						},
-						1000: {
-							items: 1,
-						},
-					},
-					navText: [
-						"<i class='icon-arrow-left3 owl-direction'></i>",
-						"<i class='icon-arrow-right3 owl-direction'></i>",
-					],
-				});
-			}
+      if ($("#customModal1 .owl-carousel").length <= 0) {
+        $("#customModal1 .myCarousel").owlCarousel({
+          animateOut: "fadeOut",
+          animateIn: "fadeIn",
+          //   autoplay: true,
+          loop: true,
+          margin: 0,
+          nav: true,
+          dots: false,
+          autoHeight: true,
+          lazyLoad: true,
+          responsive: {
+            0: {
+              items: 1,
+            },
+            600: {
+              items: 1,
+            },
+            1000: {
+              items: 1,
+            },
+          },
+          navText: [
+            "<i class='icon-arrow-left3 owl-direction'></i>",
+            "<i class='icon-arrow-right3 owl-direction'></i>",
+          ],
+        });
+      }
 
-			$("#customModal1 .closeModal").on("click", () => {
-				$("#customModal1").hide();
-			});
-		});
+      $("#customModal1 .closeModal").on("click", () => {
+        $("#customModal1").hide();
+      });
+    });
 
-		let lanhdaotrunguongContent = `<div id="customModal2" class="modal">
+    let lanhdaotrunguongContent = `<div id="customModal2" class="modal">
 		<span class="closeModal">×</span>
 		<div class="body">
 			<div class="box-img myCarousel">
@@ -1233,49 +1227,49 @@
 	</div>
 	`;
 
-		$(".lanhdaotrunguong .article").on("click", () => {
-			if ($("#customModal2").length <= 0) {
-				const modalContainer = document.createElement("div");
-				modalContainer.innerHTML = lanhdaotrunguongContent;
-				document.body.appendChild(modalContainer);
-				$(".lanhdaotrunguongImg").lazy();
-			}
-			$("#customModal2").show();
-			if ($("#customModal2 .owl-carousel").length <= 0) {
-				$("#customModal2 .myCarousel").owlCarousel({
-					animateOut: "fadeOut",
-					animateIn: "fadeIn",
-					//   autoplay: true,
-					loop: true,
-					margin: 0,
-					nav: true,
-					dots: false,
-					autoHeight: true,
-					lazyLoad: true,
-					responsive: {
-						0: {
-							items: 1,
-						},
-						600: {
-							items: 1,
-						},
-						1000: {
-							items: 1,
-						},
-					},
-					navText: [
-						"<i class='icon-arrow-left3 owl-direction'></i>",
-						"<i class='icon-arrow-right3 owl-direction'></i>",
-					],
-				});
-			}
+    $(".lanhdaotrunguong .article").on("click", () => {
+      if ($("#customModal2").length <= 0) {
+        const modalContainer = document.createElement("div");
+        modalContainer.innerHTML = lanhdaotrunguongContent;
+        document.body.appendChild(modalContainer);
+        $(".lanhdaotrunguongImg").lazy();
+      }
+      $("#customModal2").show();
+      if ($("#customModal2 .owl-carousel").length <= 0) {
+        $("#customModal2 .myCarousel").owlCarousel({
+          animateOut: "fadeOut",
+          animateIn: "fadeIn",
+          //   autoplay: true,
+          loop: true,
+          margin: 0,
+          nav: true,
+          dots: false,
+          autoHeight: true,
+          lazyLoad: true,
+          responsive: {
+            0: {
+              items: 1,
+            },
+            600: {
+              items: 1,
+            },
+            1000: {
+              items: 1,
+            },
+          },
+          navText: [
+            "<i class='icon-arrow-left3 owl-direction'></i>",
+            "<i class='icon-arrow-right3 owl-direction'></i>",
+          ],
+        });
+      }
 
-			$("#customModal2 .closeModal").on("click", () => {
-				$("#customModal2").hide();
-			});
-		});
+      $("#customModal2 .closeModal").on("click", () => {
+        $("#customModal2").hide();
+      });
+    });
 
-		let banbientapContent = `<div id="customModal3" class="modal">
+    let banbientapContent = `<div id="customModal3" class="modal">
 		<span class="closeModal">×</span>
 		<div class="body">
 			<div class="box-img myCarousel">
@@ -1504,50 +1498,50 @@
 		</div>
 	</div>`;
 
-		$(".banbientap .article").on("click", () => {
-			if ($("#customModa3").length <= 0) {
-				const modalContainer = document.createElement("div");
-				modalContainer.innerHTML = banbientapContent;
-				document.body.appendChild(modalContainer);
-				$(".lanhdaotinhImg").lazy();
-			}
+    $(".banbientap .article").on("click", () => {
+      if ($("#customModa3").length <= 0) {
+        const modalContainer = document.createElement("div");
+        modalContainer.innerHTML = banbientapContent;
+        document.body.appendChild(modalContainer);
+        $(".lanhdaotinhImg").lazy();
+      }
 
-			$("#customModal3").show();
-			if ($("#customModal3 .owl-carousel").length <= 0) {
-				$("#customModal3 .myCarousel").owlCarousel({
-					animateOut: "fadeOut",
-					animateIn: "fadeIn",
-					//   autoplay: true,
-					loop: true,
-					margin: 0,
-					nav: true,
-					dots: false,
-					autoHeight: true,
-					lazyLoad: true,
-					responsive: {
-						0: {
-							items: 1,
-						},
-						600: {
-							items: 1,
-						},
-						1000: {
-							items: 1,
-						},
-					},
-					navText: [
-						"<i class='icon-arrow-left3 owl-direction'></i>",
-						"<i class='icon-arrow-right3 owl-direction'></i>",
-					],
-				});
-			}
+      $("#customModal3").show();
+      if ($("#customModal3 .owl-carousel").length <= 0) {
+        $("#customModal3 .myCarousel").owlCarousel({
+          animateOut: "fadeOut",
+          animateIn: "fadeIn",
+          //   autoplay: true,
+          loop: true,
+          margin: 0,
+          nav: true,
+          dots: false,
+          autoHeight: true,
+          lazyLoad: true,
+          responsive: {
+            0: {
+              items: 1,
+            },
+            600: {
+              items: 1,
+            },
+            1000: {
+              items: 1,
+            },
+          },
+          navText: [
+            "<i class='icon-arrow-left3 owl-direction'></i>",
+            "<i class='icon-arrow-right3 owl-direction'></i>",
+          ],
+        });
+      }
 
-			$("#customModal3 .closeModal").on("click", () => {
-				$("#customModal3").hide();
-			});
-		});
+      $("#customModal3 .closeModal").on("click", () => {
+        $("#customModal3").hide();
+      });
+    });
 
-		let lanhdaotinhContent = `<div id="customModal4" class="modal">
+    let lanhdaotinhContent = `<div id="customModal4" class="modal">
 		<span class="closeModal">×</span>
 		<div class="body">
 			<div class="box-img myCarousel">
@@ -1833,50 +1827,49 @@
 		</div>
 	</div>`;
 
+    $(".lanhdaotinh .article").on("click", () => {
+      if ($("#customModa4").length <= 0) {
+        const modalContainer = document.createElement("div");
+        modalContainer.innerHTML = lanhdaotinhContent;
+        document.body.appendChild(modalContainer);
+        $(".bientapImg").lazy();
+      }
+      $("#customModal4").show();
+      if ($("#customModal4 .owl-carousel").length <= 0) {
+        $("#customModal4 .myCarousel").owlCarousel({
+          animateOut: "fadeOut",
+          animateIn: "fadeIn",
+          //   autoplay: true,
+          loop: true,
+          margin: 0,
+          nav: true,
+          dots: false,
+          autoHeight: true,
+          lazyLoad: true,
+          responsive: {
+            0: {
+              items: 1,
+            },
+            600: {
+              items: 1,
+            },
+            1000: {
+              items: 1,
+            },
+          },
+          navText: [
+            "<i class='icon-arrow-left3 owl-direction'></i>",
+            "<i class='icon-arrow-right3 owl-direction'></i>",
+          ],
+        });
+      }
 
-		$(".lanhdaotinh .article").on("click", () => {
-			if ($("#customModa4").length <= 0) {
-				const modalContainer = document.createElement("div");
-				modalContainer.innerHTML = lanhdaotinhContent;
-				document.body.appendChild(modalContainer);
-				$(".bientapImg").lazy();
-			}
-			$("#customModal4").show();
-			if ($("#customModal4 .owl-carousel").length <= 0) {
-				$("#customModal4 .myCarousel").owlCarousel({
-					animateOut: "fadeOut",
-					animateIn: "fadeIn",
-					//   autoplay: true,
-					loop: true,
-					margin: 0,
-					nav: true,
-					dots: false,
-					autoHeight: true,
-					lazyLoad: true,
-					responsive: {
-						0: {
-							items: 1,
-						},
-						600: {
-							items: 1,
-						},
-						1000: {
-							items: 1,
-						},
-					},
-					navText: [
-						"<i class='icon-arrow-left3 owl-direction'></i>",
-						"<i class='icon-arrow-right3 owl-direction'></i>",
-					],
-				});
-			}
+      $("#customModal4 .closeModal").on("click", () => {
+        $("#customModal4").hide();
+      });
+    });
 
-			$("#customModal4 .closeModal").on("click", () => {
-				$("#customModal4").hide();
-			});
-		});
-
-		let cungbacContent = `<div id="customModal5" class="modal">
+    let cungbacContent = `<div id="customModal5" class="modal">
 		<span class="closeModal">×</span>
 		<div class="body">
 			<div class="box-img myCarousel">
@@ -1906,110 +1899,107 @@
 			</div>
 		</div>
 	</div>`;
-		$(".cungbac .ok").on("click", () => {
-			if ($("#customModal5").length <= 0) {
-				const modalContainer = document.createElement("div");
-				modalContainer.id = "cungbac";
-				modalContainer.innerHTML = cungbacContent;
-				document.body.appendChild(modalContainer);
-				$(".cungbacImg").lazy();
-			}
-			$("#customModal5").show();
-			if ($("#customModal5 .owl-carousel").length <= 0) {
-				$("#customModal5 .myCarousel").owlCarousel({
-					animateOut: "fadeOut",
-					animateIn: "fadeIn",
-					//   autoplay: true,
-					loop: true,
-					margin: 0,
-					nav: true,
-					dots: false,
-					autoHeight: true,
-					lazyLoad: true,
-					responsive: {
-						0: {
-							items: 1,
-						},
-						600: {
-							items: 1,
-						},
-						1000: {
-							items: 1,
-						},
-					},
-					navText: [
-						"<i class='icon-arrow-left3 owl-direction'></i>",
-						"<i class='icon-arrow-right3 owl-direction'></i>",
-					],
-				});
-			}
+    $(".cungbac .ok").on("click", () => {
+      if ($("#customModal5").length <= 0) {
+        const modalContainer = document.createElement("div");
+        modalContainer.id = "cungbac";
+        modalContainer.innerHTML = cungbacContent;
+        document.body.appendChild(modalContainer);
+        $(".cungbacImg").lazy();
+      }
+      $("#customModal5").show();
+      if ($("#customModal5 .owl-carousel").length <= 0) {
+        $("#customModal5 .myCarousel").owlCarousel({
+          animateOut: "fadeOut",
+          animateIn: "fadeIn",
+          //   autoplay: true,
+          loop: true,
+          margin: 0,
+          nav: true,
+          dots: false,
+          autoHeight: true,
+          lazyLoad: true,
+          responsive: {
+            0: {
+              items: 1,
+            },
+            600: {
+              items: 1,
+            },
+            1000: {
+              items: 1,
+            },
+          },
+          navText: [
+            "<i class='icon-arrow-left3 owl-direction'></i>",
+            "<i class='icon-arrow-right3 owl-direction'></i>",
+          ],
+        });
+      }
 
-			$("#customModal5 .closeModal").on("click", () => {
-				$("#customModal5").hide();
-				document.getElementById("cungbac").remove();
-			});
-		});
+      $("#customModal5 .closeModal").on("click", () => {
+        $("#customModal5").hide();
+        document.getElementById("cungbac").remove();
+      });
+    });
 
-		$(".loigioithieu img").on("click", () => {
-			$("#customModal7").show();
-			if ($("#customModal7 .owl-carousel").length <= 0) {
-				$("#customModal7 .myCarousel").owlCarousel({
-					animateOut: "fadeOut",
-					animateIn: "fadeIn",
-					//   autoplay: true,
-					loop: true,
-					margin: 0,
-					nav: true,
-					dots: false,
-					autoHeight: true,
-					lazyLoad: true,
-					responsive: {
-						0: {
-							items: 1,
-						},
-						600: {
-							items: 1,
-						},
-						1000: {
-							items: 1,
-						},
-					},
-					navText: [
-						"<i class='icon-arrow-left3 owl-direction'></i>",
-						"<i class='icon-arrow-right3 owl-direction'></i>",
-					],
-				});
-			}
+    $(".loigioithieu img").on("click", () => {
+      $("#customModal7").show();
+      if ($("#customModal7 .owl-carousel").length <= 0) {
+        $("#customModal7 .myCarousel").owlCarousel({
+          animateOut: "fadeOut",
+          animateIn: "fadeIn",
+          //   autoplay: true,
+          loop: true,
+          margin: 0,
+          nav: true,
+          dots: false,
+          autoHeight: true,
+          lazyLoad: true,
+          responsive: {
+            0: {
+              items: 1,
+            },
+            600: {
+              items: 1,
+            },
+            1000: {
+              items: 1,
+            },
+          },
+          navText: [
+            "<i class='icon-arrow-left3 owl-direction'></i>",
+            "<i class='icon-arrow-right3 owl-direction'></i>",
+          ],
+        });
+      }
 
-			$("#customModal7 .closeModal").on("click", () => {
-				$("#customModal7").hide();
-			});
-		});
+      $("#customModal7 .closeModal").on("click", () => {
+        $("#customModal7").hide();
+      });
+    });
 
+    window.onscroll = function () {
+      scrollFunction();
+    };
 
+    function scrollFunction() {
+      var scrollToTopBtn = document.getElementById("scrollToTopBtn");
+      if (
+        document.body.scrollTop > 20 ||
+        document.documentElement.scrollTop > 20
+      ) {
+        scrollToTopBtn.style.display = "block";
+      } else {
+        scrollToTopBtn.style.display = "none";
+      }
+    }
 
-
-		window.onscroll = function () {
-			scrollFunction();
-		};
-
-		function scrollFunction() {
-			var scrollToTopBtn = document.getElementById("scrollToTopBtn");
-			if (
-				document.body.scrollTop > 20 ||
-				document.documentElement.scrollTop > 20
-			) {
-				scrollToTopBtn.style.display = "block";
-			} else {
-				scrollToTopBtn.style.display = "none";
-			}
-		}
-
-		// When the user clicks on the button, scroll to the top of the document
-		document
-			.getElementById("scrollToTopBtn")
-			.addEventListener("click", function () {
-				window.scrollTo({ top: 0, behavior: "smooth" });
-			});
-	});
+    // When the user clicks on the button, scroll to the top of the document
+    document
+      .getElementById("scrollToTopBtn")
+      .addEventListener("click", function () {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      });
+  });
 })();
