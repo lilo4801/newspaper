@@ -110,7 +110,7 @@
         nav: true,
         dots: false,
         autoHeight: true,
-        lazyLoad: true,
+        lazyLoad: false,
         responsive: {
           0: {
             items: 1,
@@ -138,7 +138,7 @@
         nav: true,
         dots: false,
         autoHeight: true,
-        lazyLoad: true,
+        lazyLoad: false,
         responsive: {
           0: {
             items: 1,
@@ -184,7 +184,7 @@
         margin: 0,
         nav: true,
         autoHeight: true,
-		lazyLoad: true,
+		lazyLoad: false,
         responsive: {
           0: {
             items: 1,
@@ -210,7 +210,7 @@
         margin: 0,
         nav: true,
         autoHeight: true,
-        lazyLoad: true,
+        lazyLoad: false,
         responsive: {
           0: {
             items: 1,
@@ -292,7 +292,7 @@
     contentWayPoint();
     owlCarouselFeatureSlide();
 
-    // $(".lazy").lazy();
+    $(".lazy").lazy();
     $(".work-img").lazy();
 
     $(".soluochandleclick").on("click", (event) => {
