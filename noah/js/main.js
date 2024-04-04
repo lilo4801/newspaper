@@ -205,7 +205,7 @@
       $(".owl-carousel4").owlCarousel({
         animateOut: "fadeOut",
         animateIn: "fadeIn",
-        autoplay: true,
+        autoplay: false,
         loop: true,
         margin: 0,
         nav: true,
@@ -259,7 +259,7 @@
       $(".owl-carousel5").owlCarousel({
         animateOut: "fadeOut",
         animateIn: "fadeIn",
-        autoplay: true,
+        autoplay: false,
         loop: true,
         margin: 0,
         nav: true,
