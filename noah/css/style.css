@@ -2192,3 +2192,11 @@ input[type="text"] {
     height: 450px;
   }
 }
+
+.owl-carousel4 .owl-dot {
+  opacity: 0;
+}
+
+.owl-carousel5 .owl-dot {
+  opacity: 0;
+}
