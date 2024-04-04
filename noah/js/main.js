@@ -1418,7 +1418,7 @@
 									số đầu tiênsau tái lập tỉnh."> </img></a>
 					<div class="desc">
 						<!-- <span class="meta">Ngày 25.9.1991</span> -->
-						<h3>Bí thư Tỉnh ủy Hoàng Thừa ký duyệt Măng - sét Báo Hà Giang số đầu tiênsau tái
+						<h3>Bí thư Tỉnh ủy Hoàng Thừa ký duyệt Măng - sét Báo Hà Giang số đầu tiên sau tái
 							lập tỉnh.</h3>
 						<p></p>
 					</div>

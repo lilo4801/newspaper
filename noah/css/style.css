@@ -713,7 +713,7 @@ header .colorlib-navbar-brand .colorlib-logo:focus {
   #colorlib-progress,
   #colorlib-contact,
   #colorlib-about {
-    padding: 2em 0;
+    padding: 0;
   }
 }
 
@@ -2181,5 +2181,14 @@ input[type="text"] {
 
   .modal .desc p {
     text-align: unset;
+  }
+
+  .work-entry {
+    margin-bottom: 0em;
+  }
+
+  .lanhdaotinh .article,
+  .lanhdaotrunguong .article {
+    height: 450px;
   }
 }
