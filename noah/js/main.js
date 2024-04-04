@@ -182,9 +182,8 @@
 							style="object-fit: contain;" alt="Tổng Biên tập Báo Hà Giang Lê Trọng Lập và các đồng chí Phó Tổng Biên với
 							lãnh đạo, cán bộ, phóng viên, biên tập viên Báo Hà Giang năm 2014"> </img></a>
 					<div class="desc">
-						<h3></h3>
-						<p>Tổng Biên tập Báo Hà Giang Lê Trọng Lập và các đồng chí Phó Tổng Biên với
-							lãnh đạo, cán bộ, phóng viên, biên tập viên Báo Hà Giang năm 2014</p>
+						<h3>Tổng Biên tập Báo Hà Giang Lê Trọng Lập và các đồng chí Phó Tổng Biên với
+							lãnh đạo, cán bộ, phóng viên, biên tập viên Báo Hà Giang năm 2014</h3>
 					</div>
 				</div>
 			</div>
@@ -194,9 +193,8 @@
 							style="object-fit: contain;" alt="Lãnh đạo Đảng ủy khối Cơ quan - Doanh nghiệp tỉnh tặng hoa Chi ủy Chi bộ Báo Hà Giang
 							khóa X, nhiệm kỳ 2020 - 2025."> </img></a>
 					<div class="desc">
-						<h3></h3>
-						<p>Lãnh đạo Đảng ủy khối Cơ quan - Doanh nghiệp tỉnh tặng hoa Chi ủy Chi bộ Báo Hà Giang
-							khóa X, nhiệm kỳ 2020 - 2025.</p>
+						<h3>Lãnh đạo Đảng ủy khối Cơ quan - Doanh nghiệp tỉnh tặng hoa Chi ủy Chi bộ Báo Hà Giang
+							khóa X, nhiệm kỳ 2020 - 2025.</h3>
 					</div>
 				</div>
 			</div>
@@ -206,9 +204,9 @@
 							data-src="images/BAN BIEN TAP .png" style="object-fit: contain;" alt="Tổng Biên tập Báo Hà Giang Nguyễn Trung Thu tặng hoa chúc mừng Đại hội Hội Cựu chiến
 							binh Báo Hà Giang nhiệm kỳ 2022 - 2027 (năm 2022). "> </img></a>
 					<div class="desc">
-						<h3></h3>
-						<p>Tổng Biên tập Báo Hà Giang Nguyễn Trung Thu tặng hoa chúc mừng Đại hội Hội Cựu chiến
-							binh Báo Hà Giang nhiệm kỳ 2022 - 2027 (năm 2022). </p>
+						
+						<h3>Tổng Biên tập Báo Hà Giang Nguyễn Trung Thu tặng hoa chúc mừng Đại hội Hội Cựu chiến
+							binh Báo Hà Giang nhiệm kỳ 2022 - 2027 (năm 2022). </h3>
 					</div>
 				</div>
 			</div>
@@ -219,9 +217,9 @@
 							data-src="images/LANH DAO BAO HA GIANG.png" style="object-fit: contain;" alt="Lãnh đạo Báo Hà Giang tặng quà các thành viên Câu lạc bộ Hưu trí
 							Báo Hà Giang tại lễ ra mắt (31.1.2024)."> </img></a>
 					<div class="desc">
-						<h3></h3>
-						<p>Lãnh đạo Báo Hà Giang tặng quà các thành viên Câu lạc bộ Hưu trí
-							Báo Hà Giang tại lễ ra mắt (31.1.2024). </p>
+						
+						<h3>Lãnh đạo Báo Hà Giang tặng quà các thành viên Câu lạc bộ Hưu trí
+							Báo Hà Giang tại lễ ra mắt (31.1.2024). </h3>
 					</div>
 				</div>
 			</div>
@@ -236,12 +234,12 @@
 							(năm 2020)."> </img></a>
 					<div class="desc">
 						<h3> </h3>
-						<p>
+						<h3>
 							Tổng Biên tập Báo Hà
 							Giang Nguyễn Trung Thu
 							duyệt xuất bản số báo
 							thường kỳ in 4 mầu đầu tiên
-							(năm 2020).</p>
+							(năm 2020).</h3>
 					</div>
 				</div>
 			</div>
@@ -256,10 +254,10 @@
 							nhận bàn giao
 							thiết bị."> </img></a>
 					<div class="desc">
-						<h3></h3>
-						<p>Báo Hà Giang
+						
+						<h3>Báo Hà Giang
 							nhận bàn giao
-							thiết bị.</p>
+							thiết bị.</h3>
 					</div>
 				</div>
 			</div>
@@ -271,10 +269,10 @@
 							hỗ trợ cây giống cho xã Lùng Tám (Quản Bạ) thực
 							hiện chương trình Cải tạo vườn tạp (năm 2023)."> </img></a>
 					<div class="desc">
-						<h3></h3>
-						<p>Lãnh đạo Báo Hà Giang và Báo Tuyên Quang
+						
+						<h3>Lãnh đạo Báo Hà Giang và Báo Tuyên Quang
 							hỗ trợ cây giống cho xã Lùng Tám (Quản Bạ) thực
-							hiện chương trình Cải tạo vườn tạp (năm 2023).</p>
+							hiện chương trình Cải tạo vườn tạp (năm 2023).</h3>
 					</div>
 				</div>
 			</div>
@@ -287,11 +285,11 @@
 							hoa chúc mừng BCH CĐCS Báo Hà
 							Giang khóa mới 2023 - 2028."> </img></a>
 					<div class="desc">
-						<h3></h3>
-						<p>Lãnh đạo Báo Hà Giang và lãnh
+						
+						<h3>Lãnh đạo Báo Hà Giang và lãnh
 							đạo Công đoàn viên chức tỉnh tặng
 							hoa chúc mừng BCH CĐCS Báo Hà
-							Giang khóa mới 2023 - 2028.</p>
+							Giang khóa mới 2023 - 2028.</h3>
 					</div>
 				</div>
 			</div>
@@ -303,8 +301,8 @@
 							alt="Lãnh đạo Báo Hà Giang và Hội Nhà báo tỉnh tặng hoa chị em nhân ngày 8.3.2024.">
 						</img></a>
 					<div class="desc">
-						<h3></h3>
-						<p>Lãnh đạo Báo Hà Giang và Hội Nhà báo tỉnh tặng hoa chị em nhân ngày 8.3.2024.</p>
+						
+						<h3>Lãnh đạo Báo Hà Giang và Hội Nhà báo tỉnh tặng hoa chị em nhân ngày 8.3.2024.</h3>
 					</div>
 				</div>
 			</div>
@@ -324,8 +322,8 @@
 							2022 - 2024 (tháng
 							4.2022)."> </img></a>
 					<div class="desc">
-						<h3></h3>
-						<p>Lãnh đạo Báo Hà
+						
+						<h3>Lãnh đạo Báo Hà
 							Giang; đại diện
 							Chi đoàn Đồn Biên
 							phòng Cửa khẩu
@@ -335,7 +333,7 @@
 							Chi đoàn Báo Hà
 							Giang, nhiệm kỳ
 							2022 - 2024 (tháng
-							4.2022).</p>
+							4.2022).</h3>
 					</div>
 				</div>
 			</div>
@@ -350,9 +348,9 @@
 							(năm 2023)."> </img></a>
 					<div class="desc">
 						<h3> </h3>
-						<p>Phóng viên Báo Hà Giang phỏng vấn lực lượng diễn tập phương
+						<h3>Phóng viên Báo Hà Giang phỏng vấn lực lượng diễn tập phương
 							án phòng cháy, chữa cháy chợ Yên Biên, thành phố Hà Giang
-							(năm 2023).</p>
+							(năm 2023).</h3>
 					</div>
 				</div>
 			</div>
@@ -363,10 +361,10 @@
 							và HĐND lần thứ Hai (Giải Diên Hồng)
 							năm 2024."> </img></a>
 					<div class="desc">
-						<h3></h3>
-						<p>Giải C Giải báo chí toàn quốc về Quốc hội
+						
+						<h3>Giải C Giải báo chí toàn quốc về Quốc hội
 							và HĐND lần thứ Hai (Giải Diên Hồng)
-							năm 2024.</p>
+							năm 2024.</h3>
 					</div>
 				</div>
 			</div>
@@ -379,10 +377,10 @@
 							về Quốc hội và HĐND lần thứ Nhất
 							(Giải Diên Hồng) năm 2023."> </img></a>
 					<div class="desc">
-						<h3></h3>
-						<p>Giải Khuyến khích Giải báo chí toàn quốc
+						
+						<h3>Giải Khuyến khích Giải báo chí toàn quốc
 							về Quốc hội và HĐND lần thứ Nhất
-							(Giải Diên Hồng) năm 2023.</p>
+							(Giải Diên Hồng) năm 2023.</h3>
 					</div>
 				</div>
 			</div>
@@ -394,10 +392,10 @@
 							về xây dựng Đảng (Giải Búa
 							liềm vàng) lần thứ VIII - 2023."> </img></a>
 					<div class="desc">
-						<h3></h3>
-						<p>Giải C Giải báo chí toàn quốc
+						
+						<h3>Giải C Giải báo chí toàn quốc
 							về xây dựng Đảng (Giải Búa
-							liềm vàng) lần thứ VIII - 2023.</p>
+							liềm vàng) lần thứ VIII - 2023.</h3>
 					</div>
 				</div>
 			</div>
@@ -409,11 +407,11 @@
 							(Từ trái qua: Diệu Kế, Nguyễn Phương, Kim Tiến,
 							Biện Luân, Hoàng Ngọc, Thu Phương)."> </img></a>
 					<div class="desc">
-						<h3></h3>
-						<p>Nhóm tác giả Báo Hà Giang đoạt giải C Giải báo chí
+						
+						<h3>Nhóm tác giả Báo Hà Giang đoạt giải C Giải báo chí
 							toàn quốc về xây dựng Đảng lần thứ VIII - năm 2023.
 							(Từ trái qua: Diệu Kế, Nguyễn Phương, Kim Tiến,
-							Biện Luân, Hoàng Ngọc, Thu Phương).</p>
+							Biện Luân, Hoàng Ngọc, Thu Phương).</h3>
 					</div>
 				</div>
 			</div>
@@ -432,15 +430,15 @@
 							năm
 							2023."> </img></a>
 					<div class="desc">
-						<h3></h3>
-						<p>Báo Hà Giang đoạt
+						
+						<h3>Báo Hà Giang đoạt
 							giải nhất đôi nam
 							nữ bóng bàn
 							Giao hữu thể
 							thao các Ban
 							xây dựng Đảng
 							năm
-							2023.</p>
+							2023.</h3>
 					</div>
 				</div>
 			</div>
@@ -455,12 +453,12 @@
 							(năm
 							2023)."> </img></a>
 					<div class="desc">
-						<h3></h3>
-						<p>Giao hữu thể thao giữa
+						
+						<h3>Giao hữu thể thao giữa
 							Báo Hà Giang với
 							Viettel Post.
 							(năm
-							2023).</p>
+							2023).</h3>
 					</div>
 				</div>
 			</div>
@@ -473,9 +471,9 @@
 							data-src="images/2 (57).png" style="object-fit: contain;" alt="images/2 (57).png">
 						</img></a>
 					<div class="desc">
-						<h3></h3>
-						<p>Cán bộ, phóng viên Báo Hà Giang tham quan Cù Lao Xanh (T.P Quy nhơn, Bình Định) năm
-							2023. </p>
+						
+						<h3>Cán bộ, phóng viên Báo Hà Giang tham quan Cù Lao Xanh (T.P Quy nhơn, Bình Định) năm
+							2023. </h3>
 					</div>
 				</div>
 			</div>
@@ -485,8 +483,8 @@
 					<a class="blog-img"> <img class="img-responsive showImage hoatdongImg"
 							data-src="images/3 (57).png" style="object-fit: contain;" alt=""> </img></a>
 					<div class="desc">
-						<h3></h3>
-						<p>Cán bộ, phóng viên Báo Hà Giang tham quan Tháp Nghinh Phong (tỉnh Phú Yên) năm 2023.</p>
+						
+						<h3>Cán bộ, phóng viên Báo Hà Giang tham quan Tháp Nghinh Phong (tỉnh Phú Yên) năm 2023.</h3>
 					</div>
 				</div>
 			</div>
@@ -496,9 +494,9 @@
 					<a class="blog-img"> <img class="img-responsive showImage hoatdongImg"
 							data-src="images/6111.png" style="object-fit: contain;" alt=""> </img></a>
 					<div class="desc">
-						<h3></h3>
-						<p>Tổng Biên tập Báo Hà Giang Nguyễn Trung Thu trao quà cho hộ nghèo các xã biên giới ở
-							Xín Mần trong chương trình "Xuấn biên cương, ấm lòng dân bản" năm 2024. </p>
+						
+						<h3>Tổng Biên tập Báo Hà Giang Nguyễn Trung Thu trao quà cho hộ nghèo các xã biên giới ở
+							Xín Mần trong chương trình "Xuấn biên cương, ấm lòng dân bản" năm 2024. </h3>
 					</div>
 				</div>
 			</div>
@@ -508,9 +506,9 @@
 					<a class="blog-img"> <img class="img-responsive showImage hoatdongImg" data-src="images/4.png"
 							style="object-fit: contain;" alt="images/4.png"> </img></a>
 					<div class="desc">
-						<h3></h3>
-						<p>Phó Tổng Biên tập Mai Ngọc Quỳnh trao cây giống cho hộ nghèo xã Sủng Cháng (Yên Minh)
-							cải tạo vườn tạp. </p>
+						
+						<h3>Phó Tổng Biên tập Mai Ngọc Quỳnh trao cây giống cho hộ nghèo xã Sủng Cháng (Yên Minh)
+							cải tạo vườn tạp. </h3>
 					</div>
 				</div>
 			</div>
@@ -520,8 +518,8 @@
 					<a class="blog-img"> <img class="img-responsive showImage hoatdongImg" data-src="images/moi.png"
 							style="object-fit: contain;" alt="images/moi.png"> </img></a>
 					<div class="desc">
+						
 						<h3></h3>
-						<p></p>
 					</div>
 				</div>
 			</div>
@@ -533,10 +531,10 @@
 							Bình Minh tặng quà cho hộ nghèo xã Lũng
 							Pù, huyện Mèo Vạc."> </img></a>
 					<div class="desc">
-						<h3></h3>
-						<p>Phó Tổng Biên tập Báo Hà Giang Nguyễn
+						
+						<h3>Phó Tổng Biên tập Báo Hà Giang Nguyễn
 							Bình Minh tặng quà cho hộ nghèo xã Lũng
-							Pù, huyện Mèo Vạc.</p>
+							Pù, huyện Mèo Vạc.</h3>
 					</div>
 				</div>
 			</div>
@@ -546,7 +544,7 @@
 					<a class="blog-img"> <img class="img-responsive showImage hoatdongImg"
 							data-src="images/DSC_6642.png" style="object-fit: contain;" alt=""> </img></a>
 					<div class="desc">
-						<p>Lãnh đạo và cán bộ Báo Hà Giang thăm hộ nghèo xã Pải Lủng (Mèo Vạc) năm 2018. </p>
+						<h3>Lãnh đạo và cán bộ Báo Hà Giang thăm hộ nghèo xã Pải Lủng (Mèo Vạc) năm 2018. </h3>
 					</div>
 				</div>
 			</div>
@@ -558,9 +556,9 @@
 							điểm trường Mầm non La Chí Chải, xã Nàn Ma (huyện Xín Mần) do Báo Hà Giang kêu gọi
 							hỗ trợ xây dựng (năm 2022). "> </img></a>
 					<div class="desc">
-						<p>Tổng Biên tập Báo Hà Giang Nguyễn Trung Thu cùng các đại biểu cắt băng khánh thành
+						<h3>Tổng Biên tập Báo Hà Giang Nguyễn Trung Thu cùng các đại biểu cắt băng khánh thành
 							điểm trường Mầm non La Chí Chải, xã Nàn Ma (huyện Xín Mần) do Báo Hà Giang kêu gọi
-							hỗ trợ xây dựng (năm 2022). </p>
+							hỗ trợ xây dựng (năm 2022). </h3>
 					</div>
 				</div>
 			</div>
@@ -573,11 +571,10 @@
 							Xuân Giáp Thìn
 							năm 2024."> </img></a>
 					<div class="desc">
-						<h3></h3>
-						<p>Tặng quà Tết cho hộ nghèo xã Sủng
+						<h3>Tặng quà Tết cho hộ nghèo xã Sủng
 							Cháng (Yên Minh) nhân dịp
 							Xuân Giáp Thìn
-							năm 2024.</p>
+							năm 2024.</h3>
 					</div>
 				</div>
 			</div>
@@ -589,10 +586,9 @@
 							tâm tặng quà cho Điểm Trường Mầm non và
 							Tiểu học Tả Lủng (Mèo Vạc)."> </img></a>
 					<div class="desc">
-						<h3></h3>
-						<p>Báo Hà Giang vận động, kết nối các nhà hảo
+						<h3>Báo Hà Giang vận động, kết nối các nhà hảo
 							tâm tặng quà cho Điểm Trường Mầm non và
-							Tiểu học Tả Lủng (Mèo Vạc).</p>
+							Tiểu học Tả Lủng (Mèo Vạc).</h3>
 					</div>
 				</div>
 			</div>

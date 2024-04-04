@@ -2101,6 +2101,20 @@ input[type="text"] {
   text-align: center;
 }
 
+
+.modal .desc p {
+  text-align: center;
+}
+
+.owl-carousel {
+  touch-action: manipulation;
+}
+
+.lanhdaotinh .article,
+.lanhdaotrunguong .article {
+  height: 500px;
+}
+
 @media screen and (max-width: 768px) {
   .owl-theme .owl-controls .owl-nav [class*=owl-] {
     color: #000;
@@ -2139,30 +2153,33 @@ input[type="text"] {
   }
 
   .myCarousel .desc {
-    width: 70%;
+    width: 90%;
     margin: auto;
-    height: 100px;
+    height: 130px;
+    /* Prevent text from wrapping */
+    overflow: hidden;
+    /* Hide overflowing text */
+    text-overflow: ellipsis
   }
 
-  .myCarousel h3 {
+
+  .myCarousel h3,
+  .myCarousel h2 {
     font-size: 18px;
+    margin-top: 1em;
+    ;
   }
 
   .myCarousel .article a {
-    margin-bottom: 40px;
+    margin-bottom: 0px;
   }
 
   .closeModal {
     top: -16px;
     right: 18px;
   }
-}
 
-
-.modal .desc p {
-  text-align: center;
-}
-
-.owl-carousel {
-  touch-action: manipulation;
+  .modal .desc p {
+    text-align: unset;
+  }
 }
