@@ -173,6 +173,7 @@
 			dots: false,
 			autoHeight: true,
 			items: 1,
+			lazyLoad: true,
 			navText: [
 				"<i class='icon-arrow-left3 owl-direction'></i>",
 				"<i class='icon-arrow-right3 owl-direction'></i>",
@@ -189,6 +190,7 @@
 				margin: 0,
 				nav: true,
 				autoHeight: true,
+				lazyLoad: true,
 				responsive: {
 					0: {
 						items: 1,
@@ -214,6 +216,7 @@
 				margin: 0,
 				nav: true,
 				autoHeight: true,
+				lazyLoad: true,
 				responsive: {
 					0: {
 						items: 1,
@@ -241,6 +244,7 @@
 				margin: 0,
 				nav: true,
 				autoHeight: true,
+				lazyLoad: true,
 				responsive: {
 					0: {
 						items: 1,
@@ -266,6 +270,7 @@
 				margin: 0,
 				nav: true,
 				autoHeight: true,
+				lazyLoad: true,
 				responsive: {
 					0: {
 						items: 1,
@@ -296,8 +301,13 @@
 		owlCarouselFeatureSlide();
 
 
-		$(".lazy").lazy();
-		$(".work-img").lazy();
+		// // $(".lazy").lazy();
+		// $(".motsohoatdong .work-img").lazy();
+
+		// var lazyLoadInstance = new LazyLoad({
+		// 	// Your custom settings go here
+		// });
+
 
 
 		$(".soluochandleclick").on("click", (event) => {
@@ -330,7 +340,7 @@
 			</div>
 			<div class="item">
 				<div class="article">
-					<a class="blog-img"> <img class="img-responsive showImage hoatdongImg" data-src="images/19a.png"
+					<a class="blog-img"> <img class="img-responsive showImage owl-lazy" data-src="images/19a.png"
 							style="object-fit: contain;" alt="Lãnh đạo Đảng ủy khối Cơ quan - Doanh nghiệp tỉnh tặng hoa Chi ủy Chi bộ Báo Hà Giang
 							khóa X, nhiệm kỳ 2020 - 2025."> </img></a>
 					<div class="desc">
@@ -341,7 +351,7 @@
 			</div>
 			<div class="item">
 				<div class="article">
-					<a class="blog-img"> <img class="img-responsive showImage hoatdongImg"
+					<a class="blog-img"> <img class="img-responsive showImage owl-lazy"
 							data-src="images/BAN BIEN TAP .png" style="object-fit: contain;" alt="Tổng Biên tập Báo Hà Giang Nguyễn Trung Thu tặng hoa chúc mừng Đại hội Hội Cựu chiến
 							binh Báo Hà Giang nhiệm kỳ 2022 - 2027 (năm 2022). "> </img></a>
 					<div class="desc">
@@ -354,7 +364,7 @@
 
 			<div class="item">
 				<div class="article">
-					<a class="blog-img"> <img class="img-responsive showImage hoatdongImg"
+					<a class="blog-img"> <img class="img-responsive showImage owl-lazy"
 							data-src="images/LANH DAO BAO HA GIANG.png" style="object-fit: contain;" alt="Lãnh đạo Báo Hà Giang tặng quà các thành viên Câu lạc bộ Hưu trí
 							Báo Hà Giang tại lễ ra mắt (31.1.2024)."> </img></a>
 					<div class="desc">
@@ -367,7 +377,7 @@
 
 			<div class="item">
 				<div class="article">
-					<a class="blog-img"> <img class="img-responsive showImage hoatdongImg"
+					<a class="blog-img"> <img class="img-responsive showImage owl-lazy"
 							data-src="images/ky duyet.png" style="object-fit: contain;" alt="Tổng Biên tập Báo Hà
 							Giang Nguyễn Trung Thu
 							duyệt xuất bản số báo
@@ -390,7 +400,7 @@
 
 			<div class="item">
 				<div class="article">
-					<a class="blog-img"> <img class="img-responsive showImage hoatdongImg"
+					<a class="blog-img"> <img class="img-responsive showImage owl-lazy"
 							data-src="images/nhan ban giao.png" style="object-fit: contain;" alt="Báo Hà Giang
 							nhận bàn giao
 							thiết bị."> </img></a>
@@ -405,7 +415,7 @@
 
 			<div class="item">
 				<div class="article">
-					<a class="blog-img"> <img class="img-responsive showImage hoatdongImg"
+					<a class="blog-img"> <img class="img-responsive showImage owl-lazy"
 							data-src="images/VUON TAP.png" style="object-fit: contain;" alt="Lãnh đạo Báo Hà Giang và Báo Tuyên Quang
 							hỗ trợ cây giống cho xã Lùng Tám (Quản Bạ) thực
 							hiện chương trình Cải tạo vườn tạp (năm 2023)."> </img></a>
@@ -420,7 +430,7 @@
 
 			<div class="item">
 				<div class="article">
-					<a class="blog-img"> <img class="img-responsive showImage hoatdongImg"
+					<a class="blog-img"> <img class="img-responsive showImage owl-lazy"
 							data-src="images/BCH CONG DOAN.png" style="object-fit: contain;" alt="Lãnh đạo Báo Hà Giang và lãnh
 							đạo Công đoàn viên chức tỉnh tặng
 							hoa chúc mừng BCH CĐCS Báo Hà
@@ -437,7 +447,7 @@
 
 			<div class="item">
 				<div class="article">
-					<a class="blog-img"> <img class="img-responsive showImage hoatdongImg" data-src="images/8.png"
+					<a class="blog-img"> <img class="img-responsive showImage owl-lazy" data-src="images/8.png"
 							style="object-fit: contain;"
 							alt="Lãnh đạo Báo Hà Giang và Hội Nhà báo tỉnh tặng hoa chị em nhân ngày 8.3.2024.">
 						</img></a>
@@ -450,7 +460,7 @@
 
 			<div class="item">
 				<div class="article">
-					<a class="blog-img"> <img class="img-responsive showImage hoatdongImg"
+					<a class="blog-img"> <img class="img-responsive showImage owl-lazy"
 							data-src="images/BCH CHI DOAN.png" style="object-fit: contain;" alt="Lãnh đạo Báo Hà
 							Giang; đại diện
 							Chi đoàn Đồn Biên
@@ -483,21 +493,19 @@
 
 			<div class="item">
 				<div class="article">
-					<a class="blog-img"> <img class="img-responsive showImage hoatdongImg"
-							data-src="images/PV BAO HA GIANG PHONG VAN.png" style="object-fit: contain;" alt="Phóng viên Báo Hà Giang phỏng vấn lực lượng diễn tập phương
-							án phòng cháy, chữa cháy chợ Yên Biên, thành phố Hà Giang
-							(năm 2023)."> </img></a>
+					<a class="blog-img"> <img class="img-responsive showImage owl-lazy"
+							data-src="images/PV BAO HA GIANG PHONG VAN.png" style="object-fit: contain;" alt="Phóng viên Báo Hà Giang phỏng vấn lực lượng diễn tập phương án phòng cháy, chữa cháy
+                            tại chợ trung tâm thành phố Hà Giang (năm 2023). Cừ Lan tác nghiệp."> </img></a>
 					<div class="desc">
 						<h3> </h3>
-						<h3>Phóng viên Báo Hà Giang phỏng vấn lực lượng diễn tập phương
-							án phòng cháy, chữa cháy chợ Yên Biên, thành phố Hà Giang
-							(năm 2023).</h3>
+						<h3>Phóng viên Báo Hà Giang phỏng vấn lực lượng diễn tập phương án phòng cháy, chữa cháy
+                        tại chợ trung tâm thành phố Hà Giang (năm 2023). Cừ Lan tác nghiệp.</h3>
 					</div>
 				</div>
 			</div>
 			<div class="item">
 				<div class="article">
-					<a class="blog-img"> <img class="img-responsive showImage hoatdongImg"
+					<a class="blog-img"> <img class="img-responsive showImage owl-lazy"
 							data-src="images/giai ve quoc hoi va hdnd.png" style="object-fit: contain;" alt="Giải C Giải báo chí toàn quốc về Quốc hội
 							và HĐND lần thứ Hai (Giải Diên Hồng)
 							năm 2024."> </img></a>
@@ -513,7 +521,7 @@
 
 			<div class="item">
 				<div class="article">
-					<a class="blog-img"> <img class="img-responsive showImage hoatdongImg"
+					<a class="blog-img"> <img class="img-responsive showImage owl-lazy"
 							data-src="images/1e4ee94106f5aaabf3e4.png" style="object-fit: contain;" alt="Giải Khuyến khích Giải báo chí toàn quốc
 							về Quốc hội và HĐND lần thứ Nhất
 							(Giải Diên Hồng) năm 2023."> </img></a>
@@ -528,7 +536,7 @@
 
 			<div class="item">
 				<div class="article">
-					<a class="blog-img"> <img class="img-responsive showImage hoatdongImg"
+					<a class="blog-img"> <img class="img-responsive showImage owl-lazy"
 							data-src="images/9ea81682f93655680c27.png" style="object-fit: contain;" alt="Giải C Giải báo chí toàn quốc
 							về xây dựng Đảng (Giải Búa
 							liềm vàng) lần thứ VIII - 2023."> </img></a>
@@ -542,7 +550,7 @@
 			</div>
 			<div class="item">
 				<div class="article">
-					<a class="blog-img"> <img class="img-responsive showImage hoatdongImg"
+					<a class="blog-img"> <img class="img-responsive showImage owl-lazy"
 							data-src="images/nhom tac gia.png" style="object-fit: contain;" alt="Nhóm tác giả Báo Hà Giang đoạt giải C Giải báo chí
 							toàn quốc về xây dựng Đảng lần thứ VIII - năm 2023.
 							(Từ trái qua: Diệu Kế, Nguyễn Phương, Kim Tiến,
@@ -561,7 +569,7 @@
 
 			<div class="item">
 				<div class="article">
-					<a class="blog-img"> <img class="img-responsive showImage hoatdongImg"
+					<a class="blog-img"> <img class="img-responsive showImage owl-lazy"
 							data-src="images/1 (57).png" style="object-fit: contain;" alt="Báo Hà Giang đoạt
 							giải nhất đôi nam
 							nữ bóng bàn
@@ -587,7 +595,7 @@
 
 			<div class="item">
 				<div class="article">
-					<a class="blog-img"> <img class="img-responsive showImage hoatdongImg"
+					<a class="blog-img"> <img class="img-responsive showImage owl-lazy"
 							data-src="images/4 (57).png" style="object-fit: contain;" alt="Giao hữu thể thao giữa
 							Báo Hà Giang với
 							Viettel Post.
@@ -608,7 +616,7 @@
 
 			<div class="item">
 				<div class="article">
-					<a class="blog-img"> <img class="img-responsive showImage hoatdongImg"
+					<a class="blog-img"> <img class="img-responsive showImage owl-lazy"
 							data-src="images/2 (57).png" style="object-fit: contain;" alt="images/2 (57).png">
 						</img></a>
 					<div class="desc">
@@ -621,7 +629,7 @@
 
 			<div class="item">
 				<div class="article">
-					<a class="blog-img"> <img class="img-responsive showImage hoatdongImg"
+					<a class="blog-img"> <img class="img-responsive showImage owl-lazy"
 							data-src="images/3 (57).png" style="object-fit: contain;" alt=""> </img></a>
 					<div class="desc">
 						
@@ -632,19 +640,19 @@
 
 			<div class="item">
 				<div class="article">
-					<a class="blog-img"> <img class="img-responsive showImage hoatdongImg"
+					<a class="blog-img"> <img class="img-responsive showImage owl-lazy"
 							data-src="images/6111.png" style="object-fit: contain;" alt=""> </img></a>
 					<div class="desc">
 						
-						<h3>Tổng Biên tập Báo Hà Giang Nguyễn Trung Thu trao quà cho hộ nghèo các xã biên giới ở
-							Xín Mần trong chương trình "Xuấn biên cương, ấm lòng dân bản" năm 2024. </h3>
+						<h3>Tổng Biên tập Báo Hà Giang Nguyễn Trung Thu trao quà cho hộ nghèo các xã biên giới ở Xín Mần 
+                        trong chương trình "Xuấn biên cương, ấm lòng dân bản" năm 2024.  - Chữ Xuân</h3>
 					</div>
 				</div>
 			</div>
 
 			<div class="item">
 				<div class="article">
-					<a class="blog-img"> <img class="img-responsive showImage hoatdongImg" data-src="images/4.png"
+					<a class="blog-img"> <img class="img-responsive showImage owl-lazy" data-src="images/4.png"
 							style="object-fit: contain;" alt="images/4.png"> </img></a>
 					<div class="desc">
 						
@@ -656,7 +664,7 @@
 
 			<div class="item">
 				<div class="article">
-					<a class="blog-img"> <img class="img-responsive showImage hoatdongImg" data-src="images/moi.png"
+					<a class="blog-img"> <img class="img-responsive showImage owl-lazy" data-src="images/moi.png"
 							style="object-fit: contain;" alt="images/moi.png"> </img></a>
 					<div class="desc">
 						
@@ -667,7 +675,7 @@
 
 			<div class="item">
 				<div class="article">
-					<a class="blog-img"> <img class="img-responsive showImage hoatdongImg"
+					<a class="blog-img"> <img class="img-responsive showImage owl-lazy"
 							data-src="images/01_1.png" style="object-fit: contain;" alt="Phó Tổng Biên tập Báo Hà Giang Nguyễn
 							Bình Minh tặng quà cho hộ nghèo xã Lũng
 							Pù, huyện Mèo Vạc."> </img></a>
@@ -682,7 +690,7 @@
 
 			<div class="item">
 				<div class="article">
-					<a class="blog-img"> <img class="img-responsive showImage hoatdongImg"
+					<a class="blog-img"> <img class="img-responsive showImage owl-lazy"
 							data-src="images/DSC_6642.png" style="object-fit: contain;" alt=""> </img></a>
 					<div class="desc">
 						<h3>Lãnh đạo và cán bộ Báo Hà Giang thăm hộ nghèo xã Pải Lủng (Mèo Vạc) năm 2018. </h3>
@@ -692,7 +700,7 @@
 
 			<div class="item">
 				<div class="article">
-					<a class="blog-img"> <img class="img-responsive showImage hoatdongImg"
+					<a class="blog-img"> <img class="img-responsive showImage owl-lazy"
 							data-src="images/1 T59.png" style="object-fit: contain;" alt="Tổng Biên tập Báo Hà Giang Nguyễn Trung Thu cùng các đại biểu cắt băng khánh thành
 							điểm trường Mầm non La Chí Chải, xã Nàn Ma (huyện Xín Mần) do Báo Hà Giang kêu gọi
 							hỗ trợ xây dựng (năm 2022). "> </img></a>
@@ -706,7 +714,7 @@
 
 			<div class="item">
 				<div class="article">
-					<a class="blog-img"> <img class="img-responsive showImage hoatdongImg"
+					<a class="blog-img"> <img class="img-responsive showImage owl-lazy"
 							data-src="images/5 T59.png" style="object-fit: contain;" alt="Tặng quà Tết cho hộ nghèo xã Sủng
 							Cháng (Yên Minh) nhân dịp
 							Xuân Giáp Thìn
@@ -743,7 +751,6 @@
 				const modalContainer = document.createElement("div");
 				modalContainer.innerHTML = motsohoatdongContent;
 				document.body.appendChild(modalContainer);
-				$(".hoatdongImg").lazy();
 			}
 
 			$("#customModal6").show();
@@ -751,7 +758,7 @@
 				$("#customModal6 .myCarousel").owlCarousel({
 					animateOut: "fadeOut",
 					animateIn: "fadeIn",
-					//   autoplay: true,
+					autoplay: true,
 					loop: true,
 					margin: 0,
 					nav: true,
@@ -799,7 +806,7 @@
 				<!-- 1 -->
 				<div class="item">
 					<div class="article">
-						<a class="blog-img"> <img class="img-responsive showImage2 soluocImg"
+						<a class="blog-img"> <img class="img-responsive showImage2 owl-lazy"
 								data-src="images/t9 sua.png" alt="THỜI KỲ 1976 - 1991"> </img></a>
 						<div class="desc" style="text-align: center;">
 							<!-- <span class="meta">15, Feb 2018</span> -->
@@ -809,7 +816,7 @@
 				</div>
 				<div class="item">
 					<div class="article">
-						<a class="blog-img"> <img class="img-responsive showImage2 soluocImg"
+						<a class="blog-img"> <img class="img-responsive showImage2 owl-lazy"
 								data-src="images/t10 sua.png" alt="THỜI KỲ 1976 - 1991"> </img></a>
 						<div class="desc" style="text-align: center;">
 							<!-- <span class="meta">15, Feb 2018</span> -->
@@ -820,7 +827,7 @@
 				<!-- 3 -->
 				<div class="item">
 					<div class="article">
-						<a class="blog-img"> <img class="img-responsive showImage2 soluocImg"
+						<a class="blog-img"> <img class="img-responsive showImage2 owl-lazy"
 								data-src="images/T11 SUA.png" alt="THỜI KỲ 1991 - NAY"> </img></a>
 						<div class="desc" style="text-align: center;">
 							<!-- <span class="meta">15, Feb 2018</span> -->
@@ -830,7 +837,7 @@
 				</div>
 				<div class="item">
 					<div class="article">
-						<a class="blog-img"> <img class="img-responsive showImage2 soluocImg"
+						<a class="blog-img"> <img class="img-responsive showImage2 owl-lazy"
 								data-src="images/T12 SUA.png" alt="THỜI KỲ 1991 - NAY"> </img></a>
 						<div class="desc" style="text-align: center;">
 							<!-- <span class="meta">15, Feb 2018</span> -->
@@ -840,7 +847,7 @@
 				</div>
 				<div class="item">
 					<div class="article">
-						<a class="blog-img"> <img class="img-responsive showImage2 soluocImg" data-src="images/6.png"
+						<a class="blog-img"> <img class="img-responsive showImage2 owl-lazy" data-src="images/6.png"
 								alt="THỜI KỲ 1991 - NAY"> </img></a>
 						<div class="desc" style="text-align: center;">
 							<!-- <span class="meta">15, Feb 2018</span> -->
@@ -851,7 +858,7 @@
 				<!-- 6 -->
 				<div class="item">
 					<div class="article">
-						<a class="blog-img"> <img class="img-responsive showImage2 soluocImg"
+						<a class="blog-img"> <img class="img-responsive showImage2 owl-lazy"
 								data-src="images/1 To tin nam 1959.png" alt="ẤN PHẨM BÁO HÀ GIANG QUA CÁC THỜI KỲ">
 							</img></a>
 						<div class="desc" style="text-align: center;">
@@ -862,7 +869,7 @@
 				</div>
 				<div class="item">
 					<div class="article">
-						<a class="blog-img"> <img class="img-responsive showImage2 soluocImg"
+						<a class="blog-img"> <img class="img-responsive showImage2 owl-lazy"
 								data-src="images/2 To tin Xuan Tan Suu 1961.png"
 								alt="ẤN PHẨM BÁO HÀ GIANG QUA CÁC THỜI KỲ"> </img></a>
 						<div class="desc" style="text-align: center;">
@@ -873,7 +880,7 @@
 				</div>
 				<div class="item">
 					<div class="article">
-						<a class="blog-img"> <img class="img-responsive showImage2 soluocImg"
+						<a class="blog-img"> <img class="img-responsive showImage2 owl-lazy"
 								data-src="images/6 So bao dau tien sau chia tach Bao HaTuyen.png"
 								alt="ẤN PHẨM BÁO HÀ GIANG QUA CÁC THỜI KỲ"> </img></a>
 						<div class="desc" style="text-align: center;">
@@ -884,7 +891,7 @@
 				</div>
 				<div class="item">
 					<div class="article">
-						<a class="blog-img"> <img class="img-responsive showImage2 soluocImg"
+						<a class="blog-img"> <img class="img-responsive showImage2 owl-lazy"
 								data-src="images/5 To Ha Tuyen nam 1991.png" alt="ẤN PHẨM BÁO HÀ GIANG QUA CÁC THỜI KỲ">
 							</img></a>
 						<div class="desc" style="text-align: center;">
@@ -895,7 +902,7 @@
 				</div>
 				<div class="item">
 					<div class="article">
-						<a class="blog-img"> <img class="img-responsive showImage2 soluocImg" data-src="images/111.png"
+						<a class="blog-img"> <img class="img-responsive showImage2 owl-lazy" data-src="images/111.png"
 								alt="ẤN PHẨM BÁO HÀ GIANG QUA CÁC THỜI KỲ">
 							</img></a>
 						<div class="desc" style="text-align: center;">
@@ -906,7 +913,7 @@
 				</div>
 				<div class="item">
 					<div class="article">
-						<a class="blog-img"> <img class="img-responsive showImage2 soluocImg"
+						<a class="blog-img"> <img class="img-responsive showImage2 owl-lazy"
 								data-src="images/4 So Xuan Mau Than 1968.png"
 								alt="ẤN PHẨM BÁO HÀ GIANG QUA CÁC THỜI KỲ"> </img></a>
 						<div class="desc" style="text-align: center;">
@@ -917,7 +924,7 @@
 				</div>
 				<div class="item">
 					<div class="article">
-						<a class="blog-img"> <img class="img-responsive showImage2 soluocImg"
+						<a class="blog-img"> <img class="img-responsive showImage2 owl-lazy"
 								data-src="images/6 So bao dau tien sau chia tach Bao HaTuyen.png"
 								alt="ẤN PHẨM BÁO HÀ GIANG QUA CÁC THỜI KỲ"> </img></a>
 						<div class="desc" style="text-align: center;">
@@ -928,7 +935,7 @@
 				</div>
 				<div class="item">
 					<div class="article">
-						<a class="blog-img"> <img class="img-responsive showImage2 soluocImg"
+						<a class="blog-img"> <img class="img-responsive showImage2 owl-lazy"
 								data-src="images/7 So bao Ha Giang in mau dau tien (1.4.png"
 								alt="ẤN PHẨM BÁO HÀ GIANG QUA CÁC THỜI KỲ"> </img></a>
 						<div class="desc" style="text-align: center;">
@@ -956,7 +963,6 @@
 				const modalContainer = document.createElement("div");
 				modalContainer.innerHTML = soluocContent;
 				document.body.appendChild(modalContainer);
-				$(".soluocImg").lazy();
 			}
 
 			$("#customModal1").show();
@@ -965,7 +971,7 @@
 				$("#customModal1 .myCarousel").owlCarousel({
 					animateOut: "fadeOut",
 					animateIn: "fadeIn",
-					//   autoplay: true,
+					autoplay: true,
 					loop: true,
 					margin: 0,
 					nav: true,
@@ -1014,7 +1020,7 @@
 				</div>
 				<div class="item">
 					<div class="article">
-						<a class="blog-img"> <img class="img-responsive showImage1 lanhdaotrunguongImg"
+						<a class="blog-img"> <img class="img-responsive showImage1 owl-lazy"
 								data-src="images/2a.png" style="object-fit: contain;"
 								alt="Tổng Bí thư Đỗ Mười với những người làm báo Hà Giang."> </img></a>
 						<div class="desc">
@@ -1026,7 +1032,7 @@
 				</div>
 				<div class="item">
 					<div class="article">
-						<a class="blog-img"> <img class="img-responsive showImage1 lanhdaotrunguongImg"
+						<a class="blog-img"> <img class="img-responsive showImage1 owl-lazy"
 								data-src="images/3a.png" style="object-fit: contain;" alt="Tổng Bí thư Lê Khả
 										Phiêu đọc Báo Hà
 										Giang."> </img></a>
@@ -1039,7 +1045,7 @@
 				</div>
 				<div class="item">
 					<div class="article">
-						<a class="blog-img"> <img class="img-responsive showImage1 lanhdaotrunguongImg"
+						<a class="blog-img"> <img class="img-responsive showImage1 owl-lazy"
 								data-src="images/4a.png" style="object-fit: contain;"
 								alt="Chủ tịch Quốc hội Nông Đức Mạnh chụp ảnh cùng những người làm báo tỉnh.">
 							</img></a>
@@ -1052,7 +1058,7 @@
 				</div>
 				<div class="item">
 					<div class="article">
-						<a class="blog-img"> <img class="img-responsive showImage1 lanhdaotrunguongImg"
+						<a class="blog-img"> <img class="img-responsive showImage1 owl-lazy"
 								data-src="images/5a.png" style="object-fit: contain;" alt="Chủ tịch nước Trần Đức Lương với các nhà báo
 										tại Cột cờ Quốc gia Lũng Cú (Đồng Văn)."> </img></a>
 						<div class="desc">
@@ -1065,7 +1071,7 @@
 				</div>
 				<div class="item">
 					<div class="article">
-						<a class="blog-img"> <img class="img-responsive showImage1 lanhdaotrunguongImg"
+						<a class="blog-img"> <img class="img-responsive showImage1 owl-lazy"
 								data-src="images/6a.png" style="object-fit: contain;"
 								alt="Chủ tịch Quốc hội Nguyễn Văn An cùng với các nhà báo."> </img></a>
 						<div class="desc">
@@ -1077,7 +1083,7 @@
 				</div>
 				<div class="item">
 					<div class="article">
-						<a class="blog-img"> <img class="img-responsive showImage1 lanhdaotrunguongImg"
+						<a class="blog-img"> <img class="img-responsive showImage1 owl-lazy"
 								data-src="images/7a.png" style="object-fit: contain;" alt="Chủ tịch nước Trương Tấn Sang với các phóng viên Báo Hà Giang, Đài PTTH tỉnh,
 										TTXVN."> </img></a>
 						<div class="desc">
@@ -1090,7 +1096,7 @@
 				</div>
 				<div class="item">
 					<div class="article">
-						<a class="blog-img"> <img class="img-responsive showImage1 lanhdaotrunguongImg"
+						<a class="blog-img"> <img class="img-responsive showImage1 owl-lazy"
 								data-src="images/8a.png" style="object-fit: contain;" alt="Thủ tướng Chính phủ Nguyễn Tấn Dũng
 										đọc Báo Hà Giang."> </img></a>
 						<div class="desc">
@@ -1102,7 +1108,7 @@
 				</div>
 				<div class="item">
 					<div class="article">
-						<a class="blog-img"> <img class="img-responsive showImage1 lanhdaotrunguongImg"
+						<a class="blog-img"> <img class="img-responsive showImage1 owl-lazy"
 								data-src="images/9a.png" style="object-fit: contain;" alt="Các đồng chí lãnh đạo Đảng, nhà nước thăm gian
 										trưng bày ấn phẩm báo Xuân của Báo Hà Giang,
 										Tuyên Quang, Yên Bái tại Hội báo Xuân toàn
@@ -1117,7 +1123,7 @@
 				</div>
 				<div class="item">
 					<div class="article">
-						<a class="blog-img"> <img class="img-responsive showImage1 lanhdaotrunguongImg"
+						<a class="blog-img"> <img class="img-responsive showImage1 owl-lazy"
 								data-src="images/10a.png" style="object-fit: contain;" alt="Các đồng chí lãnh đạo Đảng, Nhà nước thăm gian trưng bày báo Xuân của Báo Hà
 										Giang tại Hội báo Xuân toàn quốc."> </img></a>
 						<div class="desc">
@@ -1130,7 +1136,7 @@
 				</div>
 				<div class="item">
 					<div class="article">
-						<a class="blog-img"> <img class="img-responsive showImage1 lanhdaotrunguongImg"
+						<a class="blog-img"> <img class="img-responsive showImage1 owl-lazy"
 								data-src="images/11a.png" style="object-fit: contain;" alt="Đồng chí Hồng Vinh, Tổng Biên tập Báo Nhân dân, Chủ tịch Hội Nhà báo Việt Nam
 										cùng với những người làm báo Hà Giang."> </img></a>
 						<div class="desc">
@@ -1143,7 +1149,7 @@
 				</div>
 				<div class="item">
 					<div class="article">
-						<a class="blog-img"> <img class="img-responsive showImage1 lanhdaotrunguongImg"
+						<a class="blog-img"> <img class="img-responsive showImage1 owl-lazy"
 								data-src="images/12a.png" style="object-fit: contain;" alt="Đồng chí Đinh Thế Huynh, Tổng biên tập Báo Nhân dân
 										chụp ảnh cùng cán bộ, phòng viên, biên tập viên Báo Hà Giang."> </img></a>
 						<div class="desc">
@@ -1156,7 +1162,7 @@
 				</div>
 				<div class="item">
 					<div class="article">
-						<a class="blog-img"> <img class="img-responsive showImage1 lanhdaotrunguongImg"
+						<a class="blog-img"> <img class="img-responsive showImage1 owl-lazy"
 								data-src="images/13a.png" style="object-fit: contain;" alt="Thứ trưởng Bộ Thông tin - Truyền thôngĐỗ Quý Doãn
 										phát biểu tại buổi làm việc với Báo Hà Giang."> </img></a>
 						<div class="desc">
@@ -1169,7 +1175,7 @@
 				</div>
 				<div class="item">
 					<div class="article">
-						<a class="blog-img"> <img class="img-responsive showImage1 lanhdaotrunguongImg"
+						<a class="blog-img"> <img class="img-responsive showImage1 owl-lazy"
 								data-src="images/TONG BIEN TAP BAO NHAN DAN 2.png" style="object-fit: contain;" alt="Phó Trưởng ban Tuyên giáo T.Ư, Tổng Biên tập Báo Nhân Dân,
 										Chủ tịchHộiNhà báoViệtNam Lê Quốc Minh thăm, làm việc với Báo Hà Giang."> </img></a>
 						<div class="desc">
@@ -1182,7 +1188,7 @@
 				</div>
 				<div class="item">
 					<div class="article">
-						<a class="blog-img"> <img class="img-responsive showImage1 lanhdaotrunguongImg"
+						<a class="blog-img"> <img class="img-responsive showImage1 owl-lazy"
 								data-src="images/TONG BIEN TAP BAO NHAN DAN 1.png" style="object-fit: contain;" alt="Phó Trưởng ban Tuyên
 										giáo T.Ư, Tổng Biên
 										tập Báo Nhân Dân,
@@ -1199,7 +1205,7 @@
 				</div>
 				<div class="item">
 					<div class="article">
-						<a class="blog-img"> <img class="img-responsive showImage1 lanhdaotrunguongImg"
+						<a class="blog-img"> <img class="img-responsive showImage1 owl-lazy"
 								data-src="images/PHO CHU NHIEM UBTC1.png" style="object-fit: contain;" alt="Phó Chủ nhiệm Ủy ban Tài chính, Ngân sách của Quốc hội (khóa XV) Phạm Thúy Chinh
 										phát biểu tại buổi thăm, chúc Tết tập thể lãnh đạo, cán bộ, phóng viên,
 										biên tập viên Báo Hà Giang."> </img></a>
@@ -1238,14 +1244,12 @@
 				const modalContainer = document.createElement("div");
 				modalContainer.innerHTML = lanhdaotrunguongContent;
 				document.body.appendChild(modalContainer);
-				$(".lanhdaotrunguongImg").lazy();
 			}
 			$("#customModal2").show();
 			if ($("#customModal2 .owl-carousel").length <= 0) {
 				$("#customModal2 .myCarousel").owlCarousel({
 					animateOut: "fadeOut",
 					animateIn: "fadeIn",
-					//   autoplay: true,
 					loop: true,
 					margin: 0,
 					nav: true,
@@ -1292,7 +1296,7 @@
 				</div>
 				<div class="item">
 					<div class="article">
-						<a class="blog-img"> <img class="img-responsive showImage3 lanhdaotinhImg"
+						<a class="blog-img"> <img class="img-responsive showImage3 owl-lazy"
 								data-src="images/BINH MINH.png" alt="PHÓ TỔNG BIÊN TẬP"> </img></a>
 						<div class="desc" style="text-align: center;">
 							<h2><a>PHÓ TỔNG BIÊN TẬP</a></h2>
@@ -1301,7 +1305,7 @@
 				</div>
 				<div class="item">
 					<div class="article">
-						<a class="blog-img"> <img class="img-responsive showImage3 lanhdaotinhImg"
+						<a class="blog-img"> <img class="img-responsive showImage3 owl-lazy"
 								data-src="images/404fb2f70d6aa134f87b.png" alt="PHÓ TỔNG BIÊN TẬP">
 							</img></a>
 						<div class="desc" style="text-align: center;">
@@ -1312,7 +1316,7 @@
 				<!-- 3 -->
 				<div class="item">
 					<div class="article">
-						<a class="blog-img"> <img class="img-responsive showImage3 lanhdaotinhImg"
+						<a class="blog-img"> <img class="img-responsive showImage3 owl-lazy"
 								data-src="images/TAP THE PHONG.png" alt="PHÒNG PHÓNG VIÊN">
 							</img></a>
 						<div class="desc" style="text-align: center;">
@@ -1322,7 +1326,7 @@
 				</div>
 				<div class="item">
 					<div class="article">
-						<a class="blog-img"> <img class="img-responsive showImage3 lanhdaotinhImg"
+						<a class="blog-img"> <img class="img-responsive showImage3 owl-lazy"
 								data-src="images/23a.png" alt="PHÒNG PHÓNG VIÊN"> </img></a>
 						<div class="desc" style="text-align: center;">
 							<h2><a>PHÒNG PHÓNG VIÊN</a></h2>
@@ -1331,7 +1335,7 @@
 				</div>
 				<div class="item">
 					<div class="article">
-						<a class="blog-img"> <img class="img-responsive showImage3 lanhdaotinhImg"
+						<a class="blog-img"> <img class="img-responsive showImage3 owl-lazy"
 								data-src="images/PHUONG TIEN.png" alt="PHÒNG PHÓNG VIÊN"> </img></a>
 						<div class="desc" style="text-align: center;">
 							<h2><a>PHÒNG PHÓNG VIÊN</a></h2>
@@ -1341,7 +1345,7 @@
 				<!-- 6 -->
 				<div class="item">
 					<div class="article">
-						<a class="blog-img"> <img class="img-responsive showImage3 lanhdaotinhImg"
+						<a class="blog-img"> <img class="img-responsive showImage3 owl-lazy"
 								data-src="images/IMG_2621.png" alt="PHÒNG THƯ KÝ - XUẤT BẢN">
 							</img></a>
 						<div class="desc" style="text-align: center;">
@@ -1351,7 +1355,7 @@
 				</div>
 				<div class="item">
 					<div class="article">
-						<a class="blog-img"> <img class="img-responsive showImage3 lanhdaotinhImg"
+						<a class="blog-img"> <img class="img-responsive showImage3 owl-lazy"
 								data-src="images/IMG_2581.png" alt="PHÒNG THƯ KÝ - XUẤT BẢN">
 							</img></a>
 						<div class="desc" style="text-align: center;">
@@ -1361,7 +1365,7 @@
 				</div>
 				<div class="item">
 					<div class="article">
-						<a class="blog-img"> <img class="img-responsive showImage3 lanhdaotinhImg"
+						<a class="blog-img"> <img class="img-responsive showImage3 owl-lazy"
 								data-src="images/IMG_2591.png" alt="PHÒNG THƯ KÝ - XUẤT BẢN">
 							</img></a>
 						<div class="desc" style="text-align: center;">
@@ -1372,7 +1376,7 @@
 				<!-- 9 -->
 				<div class="item">
 					<div class="article">
-						<a class="blog-img"> <img class="img-responsive showImage3 lanhdaotinhImg"
+						<a class="blog-img"> <img class="img-responsive showImage3 owl-lazy"
 								data-src="images/f2db91b6cd13614d3802.png" alt="PHÒNG BÁO ĐIỆN TỬ">
 							</img></a>
 						<div class="desc" style="text-align: center;">
@@ -1382,7 +1386,7 @@
 				</div>
 				<div class="item">
 					<div class="article">
-						<a class="blog-img"> <img class="img-responsive showImage3 lanhdaotinhImg"
+						<a class="blog-img"> <img class="img-responsive showImage3 owl-lazy"
 								data-src="images/ec99220ab99015ce4c81.png" alt="PHÒNG BÁO ĐIỆN TỬ">
 							</img></a>
 						<div class="desc" style="text-align: center;">
@@ -1392,7 +1396,7 @@
 				</div>
 				<div class="item">
 					<div class="article">
-						<a class="blog-img"> <img class="img-responsive showImage3 lanhdaotinhImg"
+						<a class="blog-img"> <img class="img-responsive showImage3 owl-lazy"
 								data-src="images/QUANG NAM.png" alt="PHÒNG BÁO ĐIỆN TỬ"> </img></a>
 						<div class="desc" style="text-align: center;">
 							<h2><a>PHÒNG BÁO ĐIỆN TỬ</a></h2>
@@ -1401,7 +1405,7 @@
 				</div>
 				<div class="item">
 					<div class="article">
-						<a class="blog-img"> <img class="img-responsive showImage3 lanhdaotinhImg"
+						<a class="blog-img"> <img class="img-responsive showImage3 owl-lazy"
 								data-src="images/cfecaa7231e89db6c4f9.png" alt="PHÒNG BÁO ĐIỆN TỬ">
 							</img></a>
 						<div class="desc" style="text-align: center;">
@@ -1411,7 +1415,7 @@
 				</div>
 				<div class="item">
 					<div class="article">
-						<a class="blog-img"> <img class="img-responsive showImage3 lanhdaotinhImg"
+						<a class="blog-img"> <img class="img-responsive showImage3 owl-lazy"
 								data-src="images/KHACH MOI.png" alt="PHÒNG BÁO ĐIỆN TỬ"> </img></a>
 						<div class="desc" style="text-align: center;">
 							<h2><a>PHÒNG BÁO ĐIỆN TỬ</a></h2>
@@ -1421,7 +1425,7 @@
 				<!-- 14 -->
 				<div class="item">
 					<div class="article">
-						<a class="blog-img"> <img class="img-responsive showImage3 lanhdaotinhImg"
+						<a class="blog-img"> <img class="img-responsive showImage3 owl-lazy"
 								data-src="images/PHONG HANH CHINH HIEN NAY.png" alt="PHÒNG HÀNH CHÍNH - TRỊ SỰ">
 							</img></a>
 						<div class="desc" style="text-align: center;">
@@ -1431,7 +1435,7 @@
 				</div>
 				<div class="item">
 					<div class="article">
-						<a class="blog-img"> <img class="img-responsive showImage3 lanhdaotinhImg"
+						<a class="blog-img"> <img class="img-responsive showImage3 owl-lazy"
 								data-src="images/1NU CONG.png" alt="PHÒNG HÀNH CHÍNH - TRỊ SỰ">
 							</img></a>
 						<div class="desc" style="text-align: center;">
@@ -1441,7 +1445,7 @@
 				</div>
 				<div class="item">
 					<div class="article">
-						<a class="blog-img"> <img class="img-responsive showImage3 lanhdaotinhImg"
+						<a class="blog-img"> <img class="img-responsive showImage3 owl-lazy"
 								data-src="images/1D1A0243.png" alt="PHÒNG HÀNH CHÍNH - TRỊ SỰ">
 							</img></a>
 						<div class="desc" style="text-align: center;">
@@ -1452,7 +1456,7 @@
 				<!-- 17 -->
 				<div class="item">
 					<div class="article">
-						<a class="blog-img"> <img class="img-responsive showImage3 lanhdaotinhImg"
+						<a class="blog-img"> <img class="img-responsive showImage3 owl-lazy"
 								data-src="images/BD2.png" alt="PHÒNG BẠN ĐỌC - THƯ VIỆN - TƯ LIỆU">
 							</img></a>
 						<div class="desc" style="text-align: center;">
@@ -1462,7 +1466,7 @@
 				</div>
 				<div class="item">
 					<div class="article">
-						<a class="blog-img"> <img class="img-responsive showImage3 lanhdaotinhImg"
+						<a class="blog-img"> <img class="img-responsive showImage3 owl-lazy"
 								data-src="images/BD 5.png" alt="PHÒNG BẠN ĐỌC - THƯ VIỆN - TƯ LIỆU">
 							</img></a>
 						<div class="desc" style="text-align: center;">
@@ -1472,7 +1476,7 @@
 				</div>
 				<div class="item">
 					<div class="article">
-						<a class="blog-img"> <img class="img-responsive showImage3 lanhdaotinhImg"
+						<a class="blog-img"> <img class="img-responsive showImage3 owl-lazy"
 								data-src="images/BD 4.png" alt="PHÒNG BẠN ĐỌC - THƯ VIỆN - TƯ LIỆU">
 							</img></a>
 						<div class="desc" style="text-align: center;">
@@ -1482,7 +1486,7 @@
 				</div>
 				<div class="item">
 					<div class="article">
-						<a class="blog-img"> <img class="img-responsive showImage3 lanhdaotinhImg"
+						<a class="blog-img"> <img class="img-responsive showImage3 owl-lazy"
 								data-src="images/BD1.png" alt="PHÒNG BẠN ĐỌC - THƯ VIỆN - TƯ LIỆU">
 							</img></a>
 						<div class="desc" style="text-align: center;">
@@ -1509,7 +1513,6 @@
 				const modalContainer = document.createElement("div");
 				modalContainer.innerHTML = banbientapContent;
 				document.body.appendChild(modalContainer);
-				$(".lanhdaotinhImg").lazy();
 			}
 
 			$("#customModal3").show();
@@ -1517,7 +1520,7 @@
 				$("#customModal3 .myCarousel").owlCarousel({
 					animateOut: "fadeOut",
 					animateIn: "fadeIn",
-					//   autoplay: true,
+					autoplay: true,
 					loop: true,
 					margin: 0,
 					nav: true,
@@ -1567,7 +1570,7 @@
 				</div>
 				<div class="item">
 					<div class="article">
-						<a class="blog-img"> <img class="img-responsive showImage bientapImg" data-src="images/2a2.png"
+						<a class="blog-img"> <img class="img-responsive showImage owl-lazy" data-src="images/2a2.png"
 								style="object-fit: contain;" alt="Bí thư Tỉnh ủy Vũ Ngọc Kỳ với lãnh đạo
 										Báo Hà Giang tại Hội Báo Xuân."> </img></a>
 						<div class="desc">
@@ -1579,7 +1582,7 @@
 				</div>
 				<div class="item">
 					<div class="article">
-						<a class="blog-img"> <img class="img-responsive showImage bientapImg" data-src="images/2a1.png"
+						<a class="blog-img"> <img class="img-responsive showImage owl-lazy" data-src="images/2a1.png"
 								style="object-fit: contain;" alt="Bí thư Tỉnh ủy Vũ Ngọc Kỳ thăm, tặng quà cán bộ, công nhân viên
 										Báo Hà Giang."> </img></a>
 						<div class="desc">
@@ -1592,7 +1595,7 @@
 				</div>
 				<div class="item">
 					<div class="article">
-						<a class="blog-img"> <img class="img-responsive showImage bientapImg" data-src="images/7.png"
+						<a class="blog-img"> <img class="img-responsive showImage owl-lazy" data-src="images/7.png"
 								style="object-fit: contain;" alt="Phó Bí thư Tỉnh ủy, Chủ tịch HĐND tỉnh Giàng Văn
 										Quẩy thăm, chúc mừng Báo Hà Giang nhân kỷ niệm 75
 										năm Ngày Báo chí Cách mạng Việt Nam."> </img></a>
@@ -1606,7 +1609,7 @@
 				</div>
 				<div class="item">
 					<div class="article">
-						<a class="blog-img"> <img class="img-responsive showImage bientapImg" data-src="images/3.png"
+						<a class="blog-img"> <img class="img-responsive showImage owl-lazy" data-src="images/3.png"
 								style="object-fit: contain;" alt="Đồng chí Triệu Tài Vinh,
 										Bí thư Tỉnh ủy trao Huân chương
 										Lao động hạng Nhất cho
@@ -1621,7 +1624,7 @@
 				</div>
 				<div class="item">
 					<div class="article">
-						<a class="blog-img"> <img class="img-responsive showImage bientapImg"
+						<a class="blog-img"> <img class="img-responsive showImage owl-lazy"
 								data-src="images/8 QUY.png" style="object-fit: contain;" alt="Đồng chí Đỗ Trọng Quý,
 										Chủ tịch UBND tỉnh cùng lãnh đạo
 										Ban biên tập và cán bộ Báo Hà Giang."> </img></a>
@@ -1635,7 +1638,7 @@
 				</div>
 				<div class="item">
 					<div class="article">
-						<a class="blog-img"> <img class="img-responsive showImage bientapImg"
+						<a class="blog-img"> <img class="img-responsive showImage owl-lazy"
 								data-src="images/3a.VINH.png" style="object-fit: contain;" alt="Đồng chí Triệu Tài Vinh, Bí thư Tỉnh ủy và đồng chí Đàm Văn Bông,
 										Phó Bí thư Tỉnh ủy, Chủ tịch UBND tỉnh với các phóng viên
 										tại Đại hội XV Đảng bộ tỉnh."> </img></a>
@@ -1650,7 +1653,7 @@
 				</div>
 				<div class="item">
 					<div class="article">
-						<a class="blog-img"> <img class="img-responsive showImage bientapImg"
+						<a class="blog-img"> <img class="img-responsive showImage owl-lazy"
 								data-src="images/IMG_6861.png" style="object-fit: contain;" alt="Đồng chí Đặng Quốc Khánh, Ủy viên Ban Chấp hành Trung ương Đảng, Bí thư Tỉnh ủy,
 										Trưởng đoàn ĐBQH khóa XV đơn vị Tỉnh Hà Giang thăm, chúc mừng và chụp ảnh lưu
 										niệm với Ban biên tập, phóng viên, biên tập viên Báo Hà Giang."> </img></a>
@@ -1665,7 +1668,7 @@
 				</div>
 				<div class="item">
 					<div class="article">
-						<a class="blog-img"> <img class="img-responsive showImage bientapImg"
+						<a class="blog-img"> <img class="img-responsive showImage owl-lazy"
 								data-src="images/bi thu khanh.png" style="object-fit: contain;" alt="Bí thư Tỉnh ủy
 										Đặng Quốc Khánh
 										xem ấn phẩm báo
@@ -1679,7 +1682,7 @@
 				</div>
 				<div class="item">
 					<div class="article">
-						<a class="blog-img"> <img class="img-responsive showImage bientapImg"
+						<a class="blog-img"> <img class="img-responsive showImage owl-lazy"
 								data-src="images/images1434104_20190201_094617.png" style="object-fit: contain;" alt="Bí thư Tỉnh ủy Triệu
 										Tài Vinh và Phó Bí
 										Thư Tỉnh ủy Nguyễn
@@ -1695,7 +1698,7 @@
 				</div>
 				<div class="item">
 					<div class="article">
-						<a class="blog-img"> <img class="img-responsive showImage bientapImg"
+						<a class="blog-img"> <img class="img-responsive showImage owl-lazy"
 								data-src="images/01_7a.png" style="object-fit: contain;" alt="Đồng chí Vương Mí Vàng, Phó Bí thư Thường trực Tỉnh ủy và các đồng chí lãnh đạo
 										tỉnh xem báo, tạp chí được triển lãm tại Hội báo Xuân."> </img></a>
 						<div class="desc">
@@ -1708,7 +1711,7 @@
 				</div>
 				<div class="item">
 					<div class="article">
-						<a class="blog-img"> <img class="img-responsive showImage bientapImg" data-src="images/13a.png"
+						<a class="blog-img"> <img class="img-responsive showImage owl-lazy" data-src="images/13a.png"
 								style="object-fit: contain;" alt="Báo Hà Giang đón nhận Huân chương Lao động hạng Nhì.">
 							</img></a>
 						<div class="desc">
@@ -1720,7 +1723,7 @@
 				</div>
 				<div class="item">
 					<div class="article">
-						<a class="blog-img"> <img class="img-responsive showImage bientapImg" data-src="images/31a1.png"
+						<a class="blog-img"> <img class="img-responsive showImage owl-lazy" data-src="images/31a1.png"
 								style="object-fit: contain;" alt="Lãnh đạo tỉnh tặng Bằng khen cho các tập thể, cá nhân Báo Hà Giang
 										nhân Lễ kỷ niệm 45 năm Ngày Báo Hà Giang ra số đầu tiên."> </img></a>
 						<div class="desc">
@@ -1733,7 +1736,7 @@
 				</div>
 				<div class="item">
 					<div class="article">
-						<a class="blog-img"> <img class="img-responsive showImage bientapImg" data-src="images/9.png"
+						<a class="blog-img"> <img class="img-responsive showImage owl-lazy" data-src="images/9.png"
 								style="object-fit: contain;" alt="Chủ tịch UBND tỉnh Đàm Văn Bông tặng Bằng khen cho các phòng nghiệp vụ
 										Báo Hà Giang."> </img></a>
 						<div class="desc">
@@ -1746,7 +1749,7 @@
 				</div>
 				<div class="item">
 					<div class="article">
-						<a class="blog-img"> <img class="img-responsive showImage bientapImg"
+						<a class="blog-img"> <img class="img-responsive showImage owl-lazy"
 								data-src="images/01_10a.png" style="object-fit: contain;" alt="Phó Bí thư Thường trực Tỉnh ủy Thào Hồng Sơn;
 										Chủ tịch UBND tỉnh Nguyễn Văn Sơn chúc mừng các cơ quan báo chí
 										nhân dịp kỷ niệm 95 năm Ngày Báo chí Cách mạng Việt Nam."> </img></a>
@@ -1761,7 +1764,7 @@
 				</div>
 				<div class="item">
 					<div class="article">
-						<a class="blog-img"> <img class="img-responsive showImage bientapImg"
+						<a class="blog-img"> <img class="img-responsive showImage owl-lazy"
 								data-src="images/thao hong son.png" style="object-fit: contain;" alt="Phó Bí thư Thường trực Tỉnh ủy, Chủ tịch HĐND tỉnh Thào Hồng Sơn
 										thăm phòng Báo Hà Giang điện tử."> </img></a>
 						<div class="desc">
@@ -1774,7 +1777,7 @@
 				</div>
 				<div class="item">
 					<div class="article">
-						<a class="blog-img"> <img class="img-responsive showImage bientapImg"
+						<a class="blog-img"> <img class="img-responsive showImage owl-lazy"
 								data-src="images/11nguyen son.png" style="object-fit: contain;" alt="Chủ tịch UBND tỉnh Nguyễn Văn Sơn tặng hoa chúc mừng Báo Hà Giang
 										nhân kỷ niệm 98 năm Ngày Báo chí cách mạng Việt Nam."> </img></a>
 						<div class="desc">
@@ -1787,7 +1790,7 @@
 				</div>
 				<div class="item">
 					<div class="article">
-						<a class="blog-img"> <img class="img-responsive showImage bientapImg"
+						<a class="blog-img"> <img class="img-responsive showImage owl-lazy"
 								data-src="images/VU MANH HA.png" style="object-fit: contain;" alt="Đồng chí Vũ Mạnh
 										Hà, Ủy viên BTV
 										Tỉnh ủy, Trưởng
@@ -1804,7 +1807,7 @@
 				</div>
 				<div class="item">
 					<div class="article">
-						<a class="blog-img"> <img class="img-responsive showImage bientapImg"
+						<a class="blog-img"> <img class="img-responsive showImage owl-lazy"
 								data-src="images/CAC DONG CHI LANH DAO TINH.png" style="object-fit: contain;" alt="Các đồng chí lãnh đạo tỉnh và đại biểu xem
 										các ấn phẩm trưng bày tại Hội báo Xuân
 										Giáp Thìn."> </img></a>
@@ -1839,14 +1842,13 @@
 				const modalContainer = document.createElement("div");
 				modalContainer.innerHTML = lanhdaotinhContent;
 				document.body.appendChild(modalContainer);
-				$(".bientapImg").lazy();
 			}
 			$("#customModal4").show();
 			if ($("#customModal4 .owl-carousel").length <= 0) {
 				$("#customModal4 .myCarousel").owlCarousel({
 					animateOut: "fadeOut",
 					animateIn: "fadeIn",
-					//   autoplay: true,
+					autoplay: true,
 					loop: true,
 					margin: 0,
 					nav: true,
@@ -1882,8 +1884,8 @@
 			<div class="box-img myCarousel">
 				<div class="item">
 					<div class="article">
-						<a class="blog-img"> <img class="img-responsive showImage cungbacImg"
-								src="images/anh bac 1.jpg" style="object-fit: contain;" alt="Cán bộ báo chí cũng là chiến sỹ cách mạng.
+						<a class="blog-img"> <img class="img-responsive showImage owl-lazy"
+								data-src="images/anh bac 1.jpg" style="object-fit: contain;" alt="Cán bộ báo chí cũng là chiến sỹ cách mạng.
 								Cây bút, trang giấy là vũ khí sắc bén của họ"> </img></a>
 						<div class="desc">
 							<h3>“Cán bộ báo chí cũng là chiến sỹ cách mạng. Cây bút, trang giấy là vũ khí sắc bén của
@@ -1894,11 +1896,11 @@
 				</div>
 				<div class="item">
 					<div class="article">
-						<a class="blog-img"> <img class="img-responsive showImage cungbacImg"
-								src="images/anh bac 2.jpg" style="object-fit: contain;"
-								alt="Bài viết đăng trên báo Hà Giang số ra ngày 20.6.1995."> </img></a>
+						<a class="blog-img"> <img class="img-responsive showImage owl-lazy"
+								data-src="images/anh bac 2.jpg" style="object-fit: contain;"
+								alt="Bài viết đăng trên Báo Hà Giang số ra ngày 20.6.1995."> </img></a>
 						<div class="desc">
-							<h3>Bài viết đăng trên báo Hà Giang số ra ngày 20.6.1995.</h3>
+							<h3>Bài viết đăng trên Báo Hà Giang số ra ngày 20.6.1995.</h3>
 							<p></p>
 						</div>
 					</div>
@@ -1912,14 +1914,13 @@
 				modalContainer.id = "cungbac";
 				modalContainer.innerHTML = cungbacContent;
 				document.body.appendChild(modalContainer);
-				$(".cungbacImg").lazy();
 			}
 			$("#customModal5").show();
 			if ($("#customModal5 .owl-carousel").length <= 0) {
 				$("#customModal5 .myCarousel").owlCarousel({
 					animateOut: "fadeOut",
 					animateIn: "fadeIn",
-					//   autoplay: true,
+					autoplay: true,
 					loop: true,
 					margin: 0,
 					nav: true,
